@@ -189,10 +189,23 @@ and **0** everywhere else.
 | width-lg | 640 | | width-6xl | 1920 |
 | width-xl | 768 | | | |
 
-> **Grid follow-up:** the responsive grid's column count and gutter aren't
-> exposed as variables (they live in Figma layout-grid styles, node
-> `5245:373010`). The container max-width (1280) and padding (32 desktop /
-> 16 mobile) above are exact; column/gutter specs still need a manual capture.
+### Responsive grid
+
+Three breakpoints, each a fixed-margin column grid (derived from the Figma grid
+frame geometry). Column width auto-fills the content area.
+
+| Breakpoint | Device | Container | Columns | Gutter | Side margin | Content width | Column width |
+|---|---|---|---|---|---|---|---|
+| Desktop | MacBook Pro (1440 viewport) | 1280 | 12 | 32 | 32 | 1216 | 72 |
+| Tablet | iPad Mini | 768 | 6 | 32 | 32 | 704 | ~90.7 |
+| Mobile | iPhone 11 Pro / X (375) | 375 | 4 | 16 | 16 | 343 | ~73.75 |
+
+**Container grid presets** (auto-fit column layouts used inside the 1280
+container): **12**, **6**, **5**, **3**, and **2** columns.
+
+> Rule of thumb: desktop and tablet use a **32px** gutter and margin; mobile
+> drops to **16px** (matching `container-padding-mobile`). Gutters use
+> `spacing-4xl` (32) / `spacing-xl` (16).
 
 ---
 
@@ -204,5 +217,7 @@ and **0** everywhere else.
 - **Verified:** every semantic color's dark value was read directly from the
   Figma dark-mode swatches (see `color-variables.md`), including the deepest
   `red/yellow/green-950` steps above.
-- **Follow-ups:** brand steps 100/300/950; the `25` step across scales; grid
-  column/gutter spec; effect/shadow styles (out of scope for now).
+- **Follow-ups:** the primitive `25` step across scales and brand steps
+  `100/300/950` (these live only in the Figma primitives collection, which the
+  MCP page listing truncates before reaching — everything actually *used* by
+  the system is captured above). Effect/shadow styles are out of scope.

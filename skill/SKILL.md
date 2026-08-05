@@ -39,6 +39,7 @@ relevant to the task at hand.
 | Form elements | `references/form-elements.md` | Inputs, selects, checkboxes, buttons, date/color pickers, and more — full variant inventory |
 | Navigation | `references/navigation.md` | Nav bars, breadcrumbs, tabs, tree views, slideout menus |
 | Data display | `references/data-display.md` | Tables, cards, badges, charts, alerts, empty states |
+| Logo | `references/logo.md` | The S1 logo — lockups, light/dark variants, colors, and usage do's/don'ts |
 
 **Tokens vs. Color variables:** `tokens.md` holds the raw values (e.g.
 `neutral-900 = #171717`); `color-variables.md` holds the semantic tokens you
@@ -79,12 +80,14 @@ Figma file**: primitive color scales, the full semantic color set with light
 spacing, radius, and the numeric type scale. Component groups (Form elements,
 Navigation, Data display) now carry their full variant inventories **plus a
 "Tokens used" block per component** — the real color/radius/spacing/type tokens
-each one draws from, extracted from Figma.
+each one draws from, extracted from Figma. The responsive grid (breakpoints,
+columns, gutters, margins) and logo (lockups, variants, colors, usage) are also
+documented from Figma.
 
-Remaining follow-ups: brand steps 100/300/950 and the `25` step across scales;
-grid column/gutter spec; and logo usage guidance. Effect/shadow styles are
-intentionally out of scope. See the "Status" notes inside `tokens.md` and
-`color-variables.md`.
+The only remaining gap is minor: the primitive `25` step and brand
+`100/300/950` — colors that live solely in the Figma primitives collection and
+aren't used anywhere in the system. Effect/shadow styles are intentionally out
+of scope. See the "Status" notes inside `tokens.md` and `color-variables.md`.
 
 ## Use cases
 

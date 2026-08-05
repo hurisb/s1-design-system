@@ -19,7 +19,8 @@ s1-design-system/
         ├── typography.md        <- fonts, weights, real size/line-height, usage
         ├── form-elements.md     <- inputs, buttons, selects, pickers, etc.
         ├── navigation.md        <- nav bars, tabs, breadcrumbs, tree views
-        └── data-display.md      <- tables, cards, badges, charts, alerts
+        ├── data-display.md      <- tables, cards, badges, charts, alerts
+        └── logo.md              <- S1 logo lockups, variants, usage
 ```
 
 ## How to use it
@@ -67,9 +68,13 @@ carry their **full variant inventories** plus a **per-component "Tokens used"
 block** (the real color/radius/spacing/type tokens each component draws from,
 from Figma) — not just a name index.
 
-Dark values were read directly from the Figma dark-mode swatches (not inferred).
-Remaining follow-ups: a few brand/`25` color steps, grid column/gutter spec, and
-logo usage. See the `SKILL.md` "Status" section for the current list.
+The responsive grid (breakpoints/columns/gutters) and the S1 logo (lockups,
+light/dark variants, colors, usage) are documented from Figma too. Dark color
+values were read directly from the Figma dark-mode swatches (not inferred).
+
+The only remaining gap is minor: the primitive `25` step and brand `100/300/950`
+color values, which live solely in the Figma primitives collection and aren't
+used anywhere in the system. See the `SKILL.md` "Status" section.
 
 ## Contributing
 
