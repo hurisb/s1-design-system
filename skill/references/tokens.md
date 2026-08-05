@@ -9,7 +9,8 @@ type styles, see [`typography.md`](typography.md).
 
 - Colors are hex; a trailing 2 hex digits = alpha (e.g. `#0000001a` = black 10%).
 - Spacing, radius, and sizes are in **px** unless noted.
-- Font family throughout is **Inter**.
+- Two typefaces: **Space Grotesk** for Display/headings (`font-family-display`),
+  **Inter** for Text/body (`font-family-body`).
 
 ---
 
@@ -142,7 +143,7 @@ Raw font sizes and line heights. For weights, usage, and named styles
 [`typography.md`](typography.md). Letter-spacing is **-2%** on Display 2xl–md
 and **0** everywhere else.
 
-### Display (headings, hero) — family: Inter
+### Display (headings, hero) — family: Space Grotesk (`font-family-display`)
 
 | Style | Size | Line height | Letter-spacing |
 |---|---|---|---|
@@ -153,7 +154,7 @@ and **0** everywhere else.
 | display-sm | 30 | 38 | 0 |
 | display-xs | 24 | 32 | 0 |
 
-### Text (body, UI) — family: Inter
+### Text (body, UI) — family: Inter (`font-family-body`)
 
 | Style | Size | Line height | Letter-spacing |
 |---|---|---|---|

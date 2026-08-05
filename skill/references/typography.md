@@ -1,7 +1,12 @@
 
 # Typography Styles Reference
 
-This skill defines every type style in the design system. Always apply these styles rather than setting font properties manually. The entire system uses **Inter** as the sole typeface.
+This skill defines every type style in the design system. Always apply these styles rather than setting font properties manually. The system uses **two typefaces**:
+
+- **Space Grotesk** — all **Display** styles (headings, hero, titles). Token: `font-family-display`.
+- **Inter** — all **Text** styles (body, labels, UI). Token: `font-family-body`.
+
+Never mix these up: headings are Space Grotesk, everything else is Inter. Both are available in Regular/Medium/Semibold/Bold and their italics.
 
 ---
 
@@ -9,9 +14,9 @@ This skill defines every type style in the design system. Always apply these sty
 
 The system has two tiers: **Display** styles for large headings and hero content, and **Text** styles for body copy, labels, and UI elements.
 
-### Display Styles
+### Display Styles — **Space Grotesk**
 
-Large-scale typographic styles for headings, hero sections, and marketing content. Display 2xl through Display md use **-2% letter spacing** for tighter optical fit at large sizes. Display sm and xs use **0 letter spacing**.
+Large-scale typographic styles for headings, hero sections, and marketing content. **Font family: Space Grotesk** (`font-family-display`). Display 2xl through Display md use **-2% letter spacing** for tighter optical fit at large sizes. Display sm and xs use **0 letter spacing**.
 
 | Style name | Size | Line height | Letter spacing | Weights available |
 |---|---|---|---|---|
@@ -22,9 +27,9 @@ Large-scale typographic styles for headings, hero sections, and marketing conten
 | **Display sm** | 30px / 1.875rem | 38px / 2.375rem | 0 | Regular, Medium, Semibold, Bold |
 | **Display xs** | 24px / 1.5rem | 32px / 2rem | 0 | Regular, Medium, Semibold, Bold |
 
-### Text Styles
+### Text Styles — **Inter**
 
-Standard typographic styles for body text, labels, UI elements, and all non-heading content. All use **0 letter spacing**.
+Standard typographic styles for body text, labels, UI elements, and all non-heading content. **Font family: Inter** (`font-family-body`). All use **0 letter spacing**.
 
 | Style name | Size | Line height | Letter spacing | Weights available |
 |---|---|---|---|---|
@@ -38,14 +43,14 @@ Standard typographic styles for body text, labels, UI elements, and all non-head
 
 ## Weight Definitions
 
-Every size is available in four weights:
+Every size is available in four weights (in both Space Grotesk and Inter), each with an italic:
 
-| Weight | Inter style | CSS weight | Purpose |
+| Weight | Style name | CSS weight | Purpose |
 |---|---|---|---|
-| **Regular** | Regular (400) | 400 | Body text, descriptions, paragraphs, supporting content |
-| **Medium** | Medium (500) | 500 | Labels, input text, navigation items, subtle emphasis |
-| **Semibold** | Semi Bold (600) | 600 | Section headings, card titles, button text, strong emphasis |
-| **Bold** | Bold (700) | 700 | Page titles, hero headings, maximum emphasis |
+| **Regular** | Regular (+ italic) | 400 | Body text, descriptions, paragraphs, supporting content |
+| **Medium** | Medium (+ italic) | 500 | Labels, input text, navigation items, subtle emphasis |
+| **Semibold** | Semibold (+ italic) | 600 | Section headings, card titles, button text, strong emphasis |
+| **Bold** | Bold (+ italic) | 700 | Page titles, hero headings, maximum emphasis |
 
 ---
 
@@ -61,9 +66,10 @@ Examples:
 
 This produces **44 total styles** (11 sizes × 4 weights — 6 Display + 5 Text).
 
-> All sizes, line heights, weights, and letter-spacing on this page are the
-> exact values from the S1 2.0 Figma file (verified against the type-scale
-> variables). Font family is **Inter** for both Display and Text tiers.
+> Sizes, line heights, and weights are the exact values from the S1 Brand
+> Guideline Figma file / token export. **Display = Space Grotesk, Text = Inter.**
+> Sizes and line heights are unchanged from the previous single-font version;
+> only the Display typeface changed (Inter → Space Grotesk).
 
 ---
 
