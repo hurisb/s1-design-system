@@ -9,6 +9,8 @@ S1-branded work consistently, without needing to be a designer or developer.
 ```
 s1-design-system/
 ├── README.md              <- you are here
+├── docs/
+│   └── GETTING-STARTED.md  <- beginner guide: install + example prompts
 └── skill/
     ├── SKILL.md             <- overview + entry point Claude reads first
     └── references/
@@ -21,12 +23,32 @@ s1-design-system/
 
 ## How to use it
 
-1. Clone or download this repo.
-2. In Claude, add the `skill/` folder as a skill (via **Save skill** on the
-   file card in a Claude conversation, or your org's skill install flow).
-3. Ask Claude anything S1-related — "what's our primary button style?",
-   "build me a settings form using S1 components," "does this screen follow
-   our brand tokens?" — Claude pulls in the relevant section automatically.
+**New to Claude Skills or downloading from GitHub? Read the step-by-step
+guide: [docs/GETTING-STARTED.md](docs/GETTING-STARTED.md).** It covers, in
+plain language for any role, how to get the files, three ways to use them in
+Claude (website/desktop, Claude Code, or no install at all), and a big list of
+example prompts.
+
+Quick version:
+
+1. **Get the files** — Download ZIP from the green **`< > Code`** button (you
+   need to be signed in and granted access, since this repo is private), or
+   `git clone` it.
+2. **Add it to Claude** — pick one:
+   - **Claude.ai / desktop app:** zip the `skill/` folder and upload it under
+     **Settings → Customize → Skills**.
+   - **Claude Code:** copy the `skill/` folder to
+     `~/.claude/skills/s1-design-system/`.
+   - **No install:** attach `SKILL.md` + the `references/` files to a chat, or
+     add them to a Claude **Project**.
+3. **Just ask** — in plain language. Claude pulls in the right section
+   automatically:
+   - "What's our primary button style?"
+   - "Build me a settings form using S1 components."
+   - "Does this screen follow our brand tokens?" *(attach a screenshot)*
+
+   More examples for designers, devs, QA, PMs, and leadership are in the
+   [getting-started guide](docs/GETTING-STARTED.md#part-3--example-prompts-copypaste).
 
 ## Who it's for
 
