@@ -66,9 +66,10 @@ and the numeric type scale. Form Elements, Navigation, and Data Display now
 carry their **full variant inventories** (every component, its variants,
 options, and usage), not just a name index.
 
-Remaining follow-ups: a few brand/`25` color steps, the three dark `-950` alert
-backgrounds, grid column/gutter spec, per-component token annotations, and logo
-usage. See the `SKILL.md` "Status" section for the current list.
+Dark values were read directly from the Figma dark-mode swatches (not inferred).
+Remaining follow-ups: a few brand/`25` color steps, grid column/gutter spec,
+per-component token annotations, and logo usage. See the `SKILL.md` "Status"
+section for the current list.
 
 ## Contributing
 

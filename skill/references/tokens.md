@@ -49,10 +49,11 @@ S1-custom (navy).
 
 | Step | Hex | | Step | Hex |
 |---|---|---|---|---|
-| red-50 | `#fef2f2` | | red-400 | `#f87171` |
-| red-100 | `#fee2e2` | | red-500 | `#ef4444` |
-| red-200 | `#fecaca` | | red-600 | `#dc2626` |
-| red-300 | `#fca5a5` | | red-700 | `#b91c1c` |
+| red-50 | `#fef2f2` | | red-500 | `#ef4444` |
+| red-100 | `#fee2e2` | | red-600 | `#dc2626` |
+| red-200 | `#fecaca` | | red-700 | `#b91c1c` |
+| red-300 | `#fca5a5` | | red-950 | `#450a0a` |
+| red-400 | `#f87171` | | | |
 
 ### Yellow (warning)
 
@@ -61,7 +62,7 @@ S1-custom (navy).
 | yellow-50 | `#fefce8` | | yellow-500 | `#eab308` |
 | yellow-100 | `#fef9c3` | | yellow-600 | `#ca8a04` |
 | yellow-200 | `#fef08a` | | yellow-700 | `#a16207` |
-| yellow-400 | `#facc15` | | | |
+| yellow-400 | `#facc15` | | yellow-950 | `#422006` |
 
 ### Green (success)
 
@@ -70,7 +71,7 @@ S1-custom (navy).
 | green-50 | `#f0fdf4` | | green-500 | `#22c55e` |
 | green-100 | `#dcfce7` | | green-600 | `#16a34a` |
 | green-200 | `#bbf7d0` | | green-700 | `#15803d` |
-| green-400 | `#4ade80` | | | |
+| green-400 | `#4ade80` | | green-950 | `#052e16` |
 
 ---
 
@@ -200,5 +201,8 @@ and **0** everywhere else.
 - **Done (real values, from Figma):** neutral / brand / red / yellow / green
   primitive scales; full extended utility palette; spacing, radius, and type
   scales; container + width tokens.
+- **Verified:** every semantic color's dark value was read directly from the
+  Figma dark-mode swatches (see `color-variables.md`), including the deepest
+  `red/yellow/green-950` steps above.
 - **Follow-ups:** brand steps 100/300/950; the `25` step across scales; grid
   column/gutter spec; effect/shadow styles (out of scope for now).

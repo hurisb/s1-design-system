@@ -4,11 +4,10 @@ This is the layer you actually apply. Bind every element to one of these
 **semantic** variables — never a raw hex or a primitive step directly. Each
 resolves automatically across light and dark modes.
 
-- **Light** values were extracted directly from the S1 2.0 Figma file.
-- **Dark** values are resolved from the documented dark-mode primitive of each
-  variable against the primitive scales in [`tokens.md`](tokens.md). Three
-  `-primary` alert backgrounds resolve to a `-950` step not surfaced in the
-  current extraction and are marked accordingly.
+- **Light** and **dark** values were both extracted directly from the S1 2.0
+  Figma file — read from the light and dark swatch columns of the color
+  documentation, and cross-checked against the primitive scales in
+  [`tokens.md`](tokens.md).
 - Rule of thumb: text → `text-*`, icons/indicators → `fg-*`, strokes → `border-*`,
   fills → `bg-*`. Never cross categories.
 
@@ -132,31 +131,27 @@ Use for fills on frames, shapes, and containers.
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
 | `bg-brand-primary` | `#d2daea` | `#1d4597` | Light brand surfaces, check icons |
-| `bg-brand-primary_alt` | `#e9edf5` | `#262626` | Brand fill → secondary in dark (active tabs) |
+| `bg-brand-primary_alt` | `#e9edf5` | `#171717` | Brand fill → secondary in dark (active tabs) |
 | `bg-brand-secondary` | `#bcc8e0` | `#1a3e88` | Featured icons |
 | `bg-brand-solid` | `#1a3e88` | `#1a3e88` | Solid brand: buttons, toggles, messages |
 | `bg-brand-solid_hover` | `#173779` | `#1d4597` | Solid brand, hover |
-| `bg-brand-section` | `#14306a` | `#262626` | Dark brand sections: CTAs, testimonials |
+| `bg-brand-section` | `#14306a` | `#171717` | Dark brand sections: CTAs, testimonials |
 | `bg-brand-section_subtle` | `#173779` | `#0a0a0a` | Subtle brand section: FAQ |
 
 ### Semantic backgrounds
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `bg-error-primary` | `#fef2f2` | red-950 * | Light error fill: error alerts/buttons |
+| `bg-error-primary` | `#fef2f2` | `#450a0a` | Light error fill: error alerts/buttons |
 | `bg-error-secondary` | `#fee2e2` | `#dc2626` | Error featured icons |
 | `bg-error-solid` | `#dc2626` | `#dc2626` | Solid error: buttons, metrics |
 | `bg-error-solid_hover` | `#b91c1c` | `#ef4444` | Solid error, hover |
-| `bg-warning-primary` | `#fefce8` | yellow-950 * | Light warning fill |
+| `bg-warning-primary` | `#fefce8` | `#422006` | Light warning fill |
 | `bg-warning-secondary` | `#fef9c3` | `#ca8a04` | Warning featured icons |
 | `bg-warning-solid` | `#ca8a04` | `#ca8a04` | Solid warning: featured icons |
-| `bg-success-primary` | `#f0fdf4` | green-950 * | Light success fill |
+| `bg-success-primary` | `#f0fdf4` | `#052e16` | Light success fill |
 | `bg-success-secondary` | `#dcfce7` | `#16a34a` | Success featured icons |
 | `bg-success-solid` | `#16a34a` | `#16a34a` | Solid success: featured icons, metrics |
-
-> \* Dark value resolves to the `-950` step of that hue, which wasn't surfaced
-> in the current Figma extraction. Fill these three in on the next pass
-> (they're the deepest tint of red/yellow/green).
 
 ---
 

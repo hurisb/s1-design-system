@@ -74,16 +74,16 @@ for a semantic variable first; drop to a primitive only when no semantic fits.
 ## Status
 
 Foundations are documented in depth **with real values pulled from the S1 2.0
-Figma file**: primitive color scales, the full semantic color set (light + dark
-hex), spacing, radius, and the numeric type scale. Component groups (Form
-elements, Navigation, Data display) now carry their full variant inventories —
-every component, its variant properties, options, and usage.
+Figma file**: primitive color scales, the full semantic color set with light
+**and** dark hex (both read directly from the Figma light/dark swatches),
+spacing, radius, and the numeric type scale. Component groups (Form elements,
+Navigation, Data display) now carry their full variant inventories — every
+component, its variant properties, options, and usage.
 
 Remaining follow-ups: brand steps 100/300/950 and the `25` step across scales;
-the three dark `-primary` alert backgrounds (`-950`); grid column/gutter spec;
-per-component token/size annotations; and logo usage guidance. Effect/shadow
-styles are intentionally out of scope. See the "Status" notes inside
-`tokens.md` and `color-variables.md`.
+grid column/gutter spec; per-component token/size annotations; and logo usage
+guidance. Effect/shadow styles are intentionally out of scope. See the "Status"
+notes inside `tokens.md` and `color-variables.md`.
 
 ## Use cases
 
