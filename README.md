@@ -14,11 +14,12 @@ s1-design-system/
 └── skill/
     ├── SKILL.md             <- overview + entry point Claude reads first
     └── references/
-        ├── tokens.md          <- color, spacing, radius, grid, type scale
-        ├── typography.md      <- fonts, weights, usage rules
-        ├── form-elements.md   <- inputs, buttons, selects, pickers, etc.
-        ├── navigation.md      <- nav bars, tabs, breadcrumbs, tree views
-        └── data-display.md    <- tables, cards, badges, charts, alerts
+        ├── tokens.md            <- raw values: color scales, spacing, radius, type, layout
+        ├── color-variables.md   <- semantic colors w/ real light+dark hex
+        ├── typography.md        <- fonts, weights, real size/line-height, usage
+        ├── form-elements.md     <- inputs, buttons, selects, pickers, etc.
+        ├── navigation.md        <- nav bars, tabs, breadcrumbs, tree views
+        └── data-display.md      <- tables, cards, badges, charts, alerts
 ```
 
 ## How to use it
@@ -58,12 +59,16 @@ code or design background required to ask Claude questions using this skill.
 
 ## Status
 
-Foundations tokens (colors, spacing, radius) are documented in depth, with
-real values pulled from the S1 2.0 Figma file. Component-level detail for
-Form Elements, Navigation, and Data Display is indexed by name today —
-deep per-component specs are a planned follow-up, along with the full grid
-spec, background-color table, numeric type scale, and logo usage guidance.
-See the `SKILL.md` "Status" section for the current list.
+Foundations are documented in depth with **real values pulled from the S1 2.0
+Figma file**: primitive color scales (hex), the full semantic color set with
+light **and** dark values, the extended utility/badge palette, spacing, radius,
+and the numeric type scale. Form Elements, Navigation, and Data Display now
+carry their **full variant inventories** (every component, its variants,
+options, and usage), not just a name index.
+
+Remaining follow-ups: a few brand/`25` color steps, the three dark `-950` alert
+backgrounds, grid column/gutter spec, per-component token annotations, and logo
+usage. See the `SKILL.md` "Status" section for the current list.
 
 ## Contributing
 

@@ -33,11 +33,17 @@ relevant to the task at hand.
 
 | Section | File | Covers |
 |---|---|---|
-| Tokens | `references/tokens.md` | Color (text/border/foreground/background), spacing, radius, grid, and type-scale values — the raw values everything else is built from |
-| Typography | `references/typography.md` | Font family, weights, display vs. text styles, usage rules |
-| Form elements | `references/form-elements.md` | Inputs, selects, checkboxes, buttons, date/color pickers, and more |
+| Tokens | `references/tokens.md` | Raw values from Figma: primitive color scales (hex), the extended utility palette, spacing, radius, numeric type scale, and layout/containers |
+| Color variables | `references/color-variables.md` | Semantic color tokens (text/border/foreground/background) with real light **and** dark hex, plus which token to use where |
+| Typography | `references/typography.md` | Font family, weights, display vs. text styles, real size/line-height values, usage rules |
+| Form elements | `references/form-elements.md` | Inputs, selects, checkboxes, buttons, date/color pickers, and more — full variant inventory |
 | Navigation | `references/navigation.md` | Nav bars, breadcrumbs, tabs, tree views, slideout menus |
 | Data display | `references/data-display.md` | Tables, cards, badges, charts, alerts, empty states |
+
+**Tokens vs. Color variables:** `tokens.md` holds the raw values (e.g.
+`neutral-900 = #171717`); `color-variables.md` holds the semantic tokens you
+actually apply (e.g. `text-primary = #171717` light / `#fafafa` dark). Reach
+for a semantic variable first; drop to a primitive only when no semantic fits.
 
 ## How to use this skill
 
@@ -67,12 +73,17 @@ relevant to the task at hand.
 
 ## Status
 
-Foundations (Tokens: color, spacing, radius) are documented in depth.
-Component-level detail for Form elements, Navigation, and Data display is
-indexed by name — deep per-component specs (variants, states) are a
-planned follow-up. Grid specs, the full background-color table, the
-numeric type scale, and logo usage guidance are also follow-ups — see the
-"Status" notes inside `tokens.md` and `typography.md`.
+Foundations are documented in depth **with real values pulled from the S1 2.0
+Figma file**: primitive color scales, the full semantic color set (light + dark
+hex), spacing, radius, and the numeric type scale. Component groups (Form
+elements, Navigation, Data display) now carry their full variant inventories —
+every component, its variant properties, options, and usage.
+
+Remaining follow-ups: brand steps 100/300/950 and the `25` step across scales;
+the three dark `-primary` alert backgrounds (`-950`); grid column/gutter spec;
+per-component token/size annotations; and logo usage guidance. Effect/shadow
+styles are intentionally out of scope. See the "Status" notes inside
+`tokens.md` and `color-variables.md`.
 
 ## Use cases
 

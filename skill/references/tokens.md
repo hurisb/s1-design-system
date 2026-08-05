@@ -1,160 +1,204 @@
-# Tokens
+# Design Tokens — raw values
 
-S1's design tokens are the atomic values — color, spacing, radius, and type
-scale — that every component is built from. Never hardcode a hex value, a
-raw pixel spacing, or a corner radius in product work. Reach for the token
-name instead: it keeps light/dark mode correct automatically and keeps every
-surface visually consistent with the brand.
+Every value on this page is pulled directly from the **S1 2.0 Figma file**
+([file](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0)). These are
+the primitive/raw tokens the rest of the system is built from. For *which*
+color to use in a given context (semantic tokens like `text-primary`,
+`bg-brand-solid`), see [`color-variables.md`](color-variables.md); for named
+type styles, see [`typography.md`](typography.md).
 
-Source of truth: [S1 2.0 Figma — Design tokens](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0?node-id=6472-97622) (colors), spacing, radius, and grid frames in the same file.
+- Colors are hex; a trailing 2 hex digits = alpha (e.g. `#0000001a` = black 10%).
+- Spacing, radius, and sizes are in **px** unless noted.
+- Font family throughout is **Inter**.
 
-## Colors
+---
 
-S1's color system is organized into three semantic layers, each with a
-light-mode and dark-mode value. Pick the layer by *what* you're coloring —
-text, a border, or a shape/icon — not by which hex looks closest.
+## 1. Color primitives
 
-### Text colors
+Semantic color variables resolve to these primitive scales. The scales match
+the Tailwind palette for the neutral and accent hues; the **brand** scale is
+S1-custom (navy).
 
-| Token | Light mode | Usage |
-|---|---|---|
-| `text-primary` (900) | `#171717` | Primary text such as page headings |
-| `text-primary_on-brand` | white | Primary text on solid brand-color backgrounds (e.g. CTA sections) |
-| `text-secondary` (700) | `#404040` | Secondary text — labels, section headings |
-| `text-secondary_hover` | `#262626` | Secondary text, hover state |
-| `text-secondary_on-brand` | brand-200 `#a5b5d5` | Secondary text on brand backgrounds |
-| `text-tertiary` (600) | `#525252` | Tertiary text — supporting text, paragraph copy |
-| `text-tertiary_hover` | `#404040` | Tertiary text, hover state |
-| `text-tertiary_on-brand` | brand-200 `#a5b5d5` | Tertiary text on brand backgrounds |
-| `text-quaternary` (500) | `#737373` | Subtle, lower-contrast text (e.g. footer column headings) |
-| `text-quaternary_on-brand` | brand-300 `#7991c0` | Quaternary text on brand backgrounds (footers) |
-| `text-white` | white | Always white regardless of mode |
-| `text-placeholder` | `#737373` | Input field placeholder text |
-| `text-brand-primary` (900) | `#11295b` | Primary brand text for headings (e.g. pricing page headers) |
-| `text-brand-secondary` (700) | `#173779` | Brand buttons, accents, subheadings (e.g. blog post cards) |
-| `text-brand-secondary_hover` | `#14306a` | Brand text, hover state |
-| `text-brand-tertiary` (600) | `#1a3e88` | Lighter accented text/highlights (e.g. metric card numbers) |
-| `text-brand-tertiary_alt` | `#1a3e88` | Alternative that stays lighter in dark mode (e.g. link buttons) |
-| `text-error-primary` (600) | `#dc2626` | Error-state text |
-| `text-warning-primary` (600) | `#ca8a04` | Warning-state text |
-| `text-success-primary` (600) | `#16a34a` | Success-state text |
+### Neutral (gray)
 
-### Border colors
+| Step | Hex | | Step | Hex |
+|---|---|---|---|---|
+| neutral-50 | `#fafafa` | | neutral-600 | `#525252` |
+| neutral-100 | `#f5f5f5` | | neutral-700 | `#404040` |
+| neutral-200 | `#e5e5e5` | | neutral-800 | `#262626` |
+| neutral-300 | `#d4d4d4` | | neutral-900 | `#171717` |
+| neutral-400 | `#a3a3a3` | | neutral-950 | `#0a0a0a` |
+| neutral-500 | `#737373` | | | |
 
-| Token | Light mode | Dark mode | Usage |
+**Base:** black `#000000` · white `#ffffff`
+
+### Brand (S1 navy)
+
+| Step | Hex | | Step | Hex |
+|---|---|---|---|---|
+| brand-50 | `#e9edf5` | | brand-600 | `#1a3e88` |
+| brand-200 | `#a5b5d5` | | brand-700 | `#173779` |
+| brand-400 | `#4c6cab` | | brand-800 | `#14306a` |
+| brand-500 | `#1d4597` | | brand-900 | `#11295b` |
+
+> Brand steps `100`, `300`, and `950` were not surfaced in this extraction pass.
+> Two brand tints used by background tokens are `#d2daea` and `#bcc8e0` (the
+> light values of `bg-brand-primary` and `bg-brand-secondary`).
+
+### Red (error)
+
+| Step | Hex | | Step | Hex |
+|---|---|---|---|---|
+| red-50 | `#fef2f2` | | red-400 | `#f87171` |
+| red-100 | `#fee2e2` | | red-500 | `#ef4444` |
+| red-200 | `#fecaca` | | red-600 | `#dc2626` |
+| red-300 | `#fca5a5` | | red-700 | `#b91c1c` |
+
+### Yellow (warning)
+
+| Step | Hex | | Step | Hex |
+|---|---|---|---|---|
+| yellow-50 | `#fefce8` | | yellow-500 | `#eab308` |
+| yellow-100 | `#fef9c3` | | yellow-600 | `#ca8a04` |
+| yellow-200 | `#fef08a` | | yellow-700 | `#a16207` |
+| yellow-400 | `#facc15` | | | |
+
+### Green (success)
+
+| Step | Hex | | Step | Hex |
+|---|---|---|---|---|
+| green-50 | `#f0fdf4` | | green-500 | `#22c55e` |
+| green-100 | `#dcfce7` | | green-600 | `#16a34a` |
+| green-200 | `#bbf7d0` | | green-700 | `#15803d` |
+| green-400 | `#4ade80` | | | |
+
+---
+
+## 2. Extended "utility" palette (badges, tags, charts)
+
+Beyond the core hues above, badges/tags expose a wider palette. These are the
+`Component colors/Utility/*` variables — the exact steps the system uses on
+badge/tag surfaces (`50` = fill, `200` = border, `500` = dot, `700` = text).
+
+| Color | 50 | 200 | 400 | 500 | 700 |
+|---|---|---|---|---|---|
+| Neutral | `#fafafa` | `#e5e5e5` | `#a3a3a3` | `#737373` | `#404040` |
+| Brand | `#e9edf5` | `#a5b5d5` | `#4c6cab` | `#1d4597` | `#173779` |
+| Red | `#fef2f2` | `#fecaca` | `#f87171` | `#ef4444` | `#b91c1c` |
+| Yellow | `#fefce8` | `#fef08a` | `#facc15` | `#eab308` | `#a16207` |
+| Green | `#f0fdf4` | `#bbf7d0` | `#4ade80` | `#22c55e` | `#15803d` |
+| Slate | `#f8fafc` | `#e2e8f0` | `#94a3b8` | `#64748b` | `#334155` |
+| Sky | `#f0f9ff` | `#bae6fd` | `#38bdf8` | `#0ea5e9` | `#0369a1` |
+| Blue | `#eff6ff` | `#bfdbfe` | `#60a5fa` | `#3b82f6` | `#1d4ed8` |
+| Indigo | `#eef2ff` | `#c7d2fe` | `#818cf8` | `#6366f1` | `#4338ca` |
+| Purple | `#faf5ff` | `#e9d5ff` | `#c084fc` | `#a855f7` | `#7e22ce` |
+| Pink | `#fdf2f8` | `#fbcfe8` | `#f472b6` | `#ec4899` | `#be185d` |
+| Orange | `#fff7ed` | `#fed7aa` | `#fb923c` | `#f97316` | `#c2410c` |
+
+> The core hues also expose step `600`: Brand `#1a3e88`, Red `#dc2626`,
+> Yellow `#ca8a04`, Green `#16a34a`. Badge color options map to these names
+> (see `data-display.md` → Badge → `Color`).
+
+---
+
+## 3. Spacing scale
+
+Padding, gaps, and margins. Base unit is 4px, with a 2px `xxs`/`sm` sub-step.
+
+| Token | px | | Token | px |
+|---|---|---|---|---|
+| spacing-none | 0 | | spacing-3xl | 24 |
+| spacing-xxs | 2 | | spacing-4xl | 32 |
+| spacing-xs | 4 | | spacing-5xl | 40 |
+| spacing-sm | 6 | | spacing-6xl | 48 |
+| spacing-md | 8 | | spacing-7xl | 64 |
+| spacing-lg | 12 | | spacing-8xl | 80 |
+| spacing-xl | 16 | | spacing-9xl | 96 |
+| spacing-2xl | 20 | | spacing-10xl | 128 |
+| | | | spacing-11xl | 160 |
+
+---
+
+## 4. Radius scale
+
+Corner radii.
+
+| Token | px | | Token | px |
+|---|---|---|---|---|
+| radius-none | 0 | | radius-xl | 12 |
+| radius-xxs | 2 | | radius-2xl | 16 |
+| radius-xs | 4 | | radius-3xl | 20 |
+| radius-sm | 6 | | radius-4xl | 24 |
+| radius-md | 8 | | radius-full | 9999 (pill/circle) |
+| radius-lg | 10 | | | |
+
+---
+
+## 5. Type scale (numeric)
+
+Raw font sizes and line heights. For weights, usage, and named styles
+(`Display sm/Semibold`, `Text sm/Medium`, etc.), see
+[`typography.md`](typography.md). Letter-spacing is **-2%** on Display 2xl–md
+and **0** everywhere else.
+
+### Display (headings, hero) — family: Inter
+
+| Style | Size | Line height | Letter-spacing |
 |---|---|---|---|
-| `border-primary` | neutral-300 `#d4d4d4` | neutral-700 `#404040` | High-contrast borders — input fields, button groups, checkboxes |
-| `border-secondary` | neutral-200 `#e5e5e5` | neutral-800 `#262626` | Medium-contrast, the default for most components — file uploaders, cards, tables, content dividers |
-| `border-secondary_alt` | `rgba(0,0,0,0.1)` | neutral-800 `#262626` | Alpha-transparency alternative, used exclusively for floating menus (dropdowns, notifications) for a sharper bottom border |
-| `border-tertiary` | neutral-100 `#f5f5f5` | neutral-800 `#262626` | Low-contrast, very subtle dividers (e.g. chart axis lines) |
-| `border-brand` | brand-500 `#1d4597` | brand-400 `#4c6cab` | Default brand border — active states (e.g. focused input fields) |
-| `border-brand_alt` | brand-600 `#1a3e88` | neutral-700 `#404040` | Brand border that turns gray in dark mode — banners, footers |
-| `border-error` | red-500 `#ef4444` | red-400 `#f87171` | Error-state borders — input fields, file uploaders |
-| `border-error_subtle` | red-300 `#fca5a5` | red-500 `#ef4444` | Lower-contrast alternative for error-state borders |
+| display-2xl | 72 | 90 | -2% |
+| display-xl | 60 | 72 | -2% |
+| display-lg | 48 | 60 | -2% |
+| display-md | 36 | 44 | -2% |
+| display-sm | 30 | 38 | 0 |
+| display-xs | 24 | 32 | 0 |
 
-### Foreground colors (icons & non-text shapes)
+### Text (body, UI) — family: Inter
 
-Use these — never text or border tokens — for icons and other non-text
-foreground elements.
-
-| Token | Light mode | Dark mode | Usage |
+| Style | Size | Line height | Letter-spacing |
 |---|---|---|---|
-| `fg-primary` (900) | `#171717` | white | Highest-contrast icons |
-| `fg-secondary` (700) | `#404040` | neutral-300 `#d4d4d4` | High-contrast icons |
-| `fg-secondary_hover` | `#262626` | neutral-200 `#e5e5e5` | Secondary icons, hover state |
-| `fg-tertiary` (600) | `#525252` | neutral-400 `#a3a3a3` | Medium-contrast icons |
-| `fg-tertiary_hover` | `#404040` | neutral-300 `#d4d4d4` | Tertiary icons, hover state |
-| `fg-quaternary` (500) | neutral-400 `#a3a3a3` | neutral-500 `#737373` | Low-contrast icons — buttons, help icons, input-field icons |
-| `fg-quaternary_hover` | `#737373` | neutral-400 `#a3a3a3` | Quaternary icons, hover state |
-| `fg-white` | white | white | Always white regardless of mode |
-| `fg-brand-primary` (600) | `#1a3e88` | brand-500 `#1d4597` | Primary brand icons — featured icons, progress bars |
-| `fg-brand-primary_alt` | `#1a3e88` | neutral-300 `#d4d4d4` | Turns gray in dark mode — active horizontal tabs |
-| `fg-brand-secondary` (500) | `#1d4597` | brand-500 `#1d4597` | Secondary brand icons — accents/arrows in marketing sections (e.g. hero headers) |
-| `fg-brand-secondary_alt` | `#1d4597` | neutral-600 `#525252` | Turns gray in dark mode — brand buttons |
-| `fg-error-primary` | `#dc2626` | red-500 `#ef4444` | Error-state featured icons |
-| `fg-error-secondary` | `#ef4444` | red-400 `#f87171` | Error icons in input fields, negative metrics |
-| `fg-warning-primary` | `#ca8a04` | yellow-500 `#eab308` | Warning-state featured icons |
-| `fg-warning-secondary` | yellow-600 `#eab308` | yellow-400 `#facc15` | Secondary warning icons |
-| `fg-success-primary` | `#16a34a` | green-500 `#22c55e` | Success-state featured icons |
-| `fg-success-secondary` | green-600 `#22c55e` | green-400 `#4ade80` | Button dots, avatar online indicators, positive metrics |
+| text-xl | 20 | 30 | 0 |
+| text-lg | 18 | 28 | 0 |
+| text-md | 16 | 24 | 0 |
+| text-sm | 14 | 20 | 0 |
+| text-xs | 12 | 18 | 0 |
 
-### Background colors
+**Weights:** Regular 400 · Medium 500 · Semibold 600 · Bold 700 (each size × 4 = 44 styles).
 
-Referenced by other tables above; documented in the Figma file's Background
-color section. Known base values:
+---
 
-| Token | Light mode | Dark mode |
-|---|---|---|
-| `bg-primary` | white | `#0a0a0a` |
-| `bg-secondary` | `#fafafa` | — |
+## 6. Layout — widths, containers, grid
 
-**Status:** full `bg-*` table (all steps + usage notes) still needs a pass —
-next iteration.
+### Container
 
-### How to apply color tokens
-
-- Never reach for a raw hex or a Tailwind/neutral scale name (`neutral-700`)
-  directly in product code — always the semantic token (`text-secondary`,
-  `border-primary`, `fg-tertiary`). The semantic name is what survives a
-  light/dark mode switch or a future rebrand; the raw value doesn't.
-  Reserve raw neutral/brand scale names for documentation and swatches only.
-- Match the token category to what you're styling: text -> `text-*`,
-  strokes/dividers -> `border-*`, icons and shapes -> `fg-*`, fills -> `bg-*`.
-- `_hover` and `_alt` suffixes are real states, not one-offs — use them for
-  interactive states instead of hand-rolling an opacity or darken filter.
-
-## Spacing
-
-S1 uses a single spacing scale for padding, margin, and gap — expressed in
-pixels in Figma. Confirmed steps:
-
-`2, 4, 6, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128, 160, 192, 224, 256, 320, 384, 480, 560, 640, 720, 768, 1024, 1280, 1440, 1600, 1920`
-
-The same frame documents responsive container/breakpoint widths at the
-larger end of this scale (768, 1024, 1280, 1440, 1600, 1920) — treat those
-top values as layout breakpoints, not component spacing.
-
-**Usage rule:** always pick from this scale. If a spacing need falls between
-two steps, that's a signal to reconsider the layout, not to introduce a
-one-off value.
-
-## Radius
-
-Radius scale (rem / px), 16px base:
-
-| rem | px |
+| Token | px |
 |---|---|
-| 0rem | 0 |
-| 0.125rem | 2 |
-| 0.25rem | 4 |
-| 0.375rem | 6 |
-| 0.5rem | 8 |
-| 0.625rem | 10 |
-| 0.75rem | 12 |
-| 1rem | 16 |
-| 1.25rem | 20 |
-| 1.5rem | 24 |
-| infinity | full / pill |
+| container-max-width-desktop | 1280 |
+| container-padding-desktop | 32 |
+| container-padding-mobile | 16 |
+| paragraph-max-width | 720 |
 
-Confirmed token names in use: `radius-xs` (4px), `radius-sm` (6px),
-`radius-md` (8px), `radius-xl` (12px). Full name-to-step mapping for the
-remaining sizes is a follow-up.
+### Width scale
 
-## Grids
+| Token | px | | Token | px |
+|---|---|---|---|---|
+| width-xxs | 320 | | width-2xl | 1024 |
+| width-xs | 384 | | width-3xl | 1280 |
+| width-sm | 480 | | width-4xl | 1440 |
+| width-md | 560 | | width-5xl | 1600 |
+| width-lg | 640 | | width-6xl | 1920 |
+| width-xl | 768 | | | |
 
-Container and column-grid specifications live in the S1 Figma file's Grids
-frame. **Status:** not yet pulled into this doc — follow-up pass.
+> **Grid follow-up:** the responsive grid's column count and gutter aren't
+> exposed as variables (they live in Figma layout-grid styles, node
+> `5245:373010`). The container max-width (1280) and padding (32 desktop /
+> 16 mobile) above are exact; column/gutter specs still need a manual capture.
 
-## Typography (raw scale)
+---
 
-Font family: **Inter** (`font-family-body`, `font-family-display`), with
-weights Regular / Medium / Semibold confirmed in use. The full numeric type
-scale (display and text sizes with their paired line-heights) lives in the
-Figma Foundations -> Typography frame. **Status:** numeric scale values are a
-follow-up pull — see `typography.md` for usage rules (which weight/size for
-which context), documented separately from these raw values.
+## Status
 
-## Logo
-
-Logo asset and usage guidance: [S1 logo frame](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0?node-id=1083-118533).
-**Status:** not yet documented in this skill — follow-up pass.
+- **Done (real values, from Figma):** neutral / brand / red / yellow / green
+  primitive scales; full extended utility palette; spacing, radius, and type
+  scales; container + width tokens.
+- **Follow-ups:** brand steps 100/300/950; the `25` step across scales; grid
+  column/gutter spec; effect/shadow styles (out of scope for now).
