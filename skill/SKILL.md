@@ -77,13 +77,14 @@ Foundations are documented in depth **with real values pulled from the S1 2.0
 Figma file**: primitive color scales, the full semantic color set with light
 **and** dark hex (both read directly from the Figma light/dark swatches),
 spacing, radius, and the numeric type scale. Component groups (Form elements,
-Navigation, Data display) now carry their full variant inventories — every
-component, its variant properties, options, and usage.
+Navigation, Data display) now carry their full variant inventories **plus a
+"Tokens used" block per component** — the real color/radius/spacing/type tokens
+each one draws from, extracted from Figma.
 
 Remaining follow-ups: brand steps 100/300/950 and the `25` step across scales;
-grid column/gutter spec; per-component token/size annotations; and logo usage
-guidance. Effect/shadow styles are intentionally out of scope. See the "Status"
-notes inside `tokens.md` and `color-variables.md`.
+grid column/gutter spec; and logo usage guidance. Effect/shadow styles are
+intentionally out of scope. See the "Status" notes inside `tokens.md` and
+`color-variables.md`.
 
 ## Use cases
 

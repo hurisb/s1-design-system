@@ -63,13 +63,13 @@ Foundations are documented in depth with **real values pulled from the S1 2.0
 Figma file**: primitive color scales (hex), the full semantic color set with
 light **and** dark values, the extended utility/badge palette, spacing, radius,
 and the numeric type scale. Form Elements, Navigation, and Data Display now
-carry their **full variant inventories** (every component, its variants,
-options, and usage), not just a name index.
+carry their **full variant inventories** plus a **per-component "Tokens used"
+block** (the real color/radius/spacing/type tokens each component draws from,
+from Figma) — not just a name index.
 
 Dark values were read directly from the Figma dark-mode swatches (not inferred).
-Remaining follow-ups: a few brand/`25` color steps, grid column/gutter spec,
-per-component token annotations, and logo usage. See the `SKILL.md` "Status"
-section for the current list.
+Remaining follow-ups: a few brand/`25` color steps, grid column/gutter spec, and
+logo usage. See the `SKILL.md` "Status" section for the current list.
 
 ## Contributing
 

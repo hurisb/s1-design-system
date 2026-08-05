@@ -46,6 +46,12 @@ A single-line text input with label, hint text, help icon, and leading/trailing 
 - `OTP` — one-time passcode entry
 - `File upload` — inline file attachment input
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-placeholder` #737373, `fg-quaternary` #a3a3a3, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `bg-primary` #ffffff, `text-error-primary` #dc2626, `border-error` #ef4444, `fg-success-primary` #16a34a, …
+- Radius: `radius-sm` 6, `radius-md` 8
+- Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24, `Text md/Semibold` 16/24
+
 ---
 
 ### 2. Textarea Input Field
@@ -75,6 +81,12 @@ Multi-line text input for longer-form content.
 - Comments, descriptions, bio fields, notes, and any content that may exceed a single line
 - `Tags inner` / `Tags outer` — multi-value entry within a textarea context
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-placeholder` #737373, `fg-quaternary` #a3a3a3, `border-primary` #d4d4d4, `border-brand` #1d4597, `border-error` #ef4444, `border-error_subtle` #fca5a5, `text-error-primary` #dc2626, `text-brand-tertiary` #1a3e88, `bg-primary` #ffffff
+- Radius: `radius-sm` 6, `radius-md` 8
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text md/Regular` 16/24
+
 ---
 
 ### 3. Verification Code Input Field
@@ -97,6 +109,12 @@ Segmented digit input for verification/OTP codes.
 
 **When to use:**
 - Email/phone verification flows, two-factor authentication, PIN entry
+
+**Tokens used** (from Figma)
+- Color: `text-tertiary` #525252, `text-secondary` #404040, `text-placeholder` #737373, `border-primary` #d4d4d4, `bg-primary` #ffffff, `utility-neutral-300` #d4d4d4
+- Radius: `radius-lg` 10, `radius-xl` 12
+- Spacing: `spacing-xxs` 2, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Display lg/Medium` 48/60, `Display xl/Medium` 60/72
 
 ---
 
@@ -126,6 +144,12 @@ Individual checkbox or radio-style check with optional label and supporting text
 - `Radio` type — single-select within a list where Radio group is not needed
 - `Indeterminate` — parent checkbox with partially selected children (e.g. "Select all" in a table)
 
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `text-tertiary` #525252, `fg-white` #ffffff, `border-primary` #d4d4d4, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `bg-tertiary` #f5f5f5
+- Radius: `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24
+
 ---
 
 ### 5. Toggle
@@ -152,6 +176,12 @@ On/off switch for binary settings.
 - Settings that take effect immediately (notifications, dark mode, feature flags)
 - `Slim` — compact toggle for dense UIs (settings panels, table rows)
 - Prefer Toggle over Checkbox when the change applies instantly without a form submission
+
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `text-tertiary` #525252, `fg-white` #ffffff, `border-secondary` #e5e5e5, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `bg-brand-solid_hover` #173779, `bg-tertiary` #f5f5f5
+- Radius: `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24
 
 ---
 
@@ -190,6 +220,12 @@ A group of mutually exclusive options.
 - `Payment icon` — payment method selection (Visa, Mastercard, etc.)
 - `Checkbox` — checkbox-styled items within a radio group context
 
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `text-tertiary` #525252, `text-brand-secondary` #173779, `fg-secondary` #404040, `fg-white` #ffffff, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `utility-green-500` #22c55e
+- Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
+- Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24, `Text md/Semibold` 16/24, `Text lg/Medium` 18/28, `Text lg/Semibold` 18/28, `Display sm/Semibold` 30/38, `Display md/Semibold` 36/44
+
 ---
 
 ### 7. Select
@@ -224,6 +260,12 @@ Single-selection dropdown.
 - `Icon leading` / `Avatar leading` / `Dot leading` — visual differentiation of options (status, user, category)
 - `Tags` — selected value shown as tag/chip
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-placeholder` #737373, `fg-quaternary` #a3a3a3, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `fg-brand-primary` #1a3e88, `fg-success-secondary` #22c55e, …
+- Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24
+
 ---
 
 ### 8. Multi-select
@@ -251,6 +293,12 @@ Multi-selection dropdown with search and tag display.
 **When to use:**
 - Selecting multiple items from a list (assign team members, select categories, tag content)
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-placeholder` #737373, `fg-quaternary` #a3a3a3, `fg-white` #ffffff, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `text-brand-secondary` #173779, …
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
+- Type: `Text xs/Regular` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24
+
 ---
 
 ### 9. Slider
@@ -274,6 +322,12 @@ Range slider for selecting numeric values.
 - `Top floating` label — shows value in a floating tooltip above the handle
 - `Bottom` label — shows value below the track
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `fg-brand-primary` #1a3e88, `bg-primary` #ffffff, `bg-primary_alt` #ffffff, `bg-brand-solid` #1a3e88, `bg-quaternary` #e5e5e5, `border-secondary_alt` #0000001a
+- Radius: `radius-md` 8, `radius-full` 9999
+- Spacing: `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text xs/Semibold` 12/18, `Text md/Medium` 16/24
+
 ---
 
 ### 10. Progress Bar
@@ -292,6 +346,12 @@ Horizontal bar showing completion progress.
 
 **When to use:**
 - File upload progress, onboarding completion, multi-step form progress, loading states
+
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `fg-brand-primary` #1a3e88, `bg-primary` #ffffff, `bg-primary_alt` #ffffff, `bg-quaternary` #e5e5e5, `border-secondary_alt` #0000001a
+- Radius: `radius-md` 8, `radius-full` 9999
+- Spacing: `spacing-xs` 4, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text xs/Semibold` 12/18, `Text sm/Medium` 14/20
 
 ---
 
@@ -316,6 +376,11 @@ Circular/semi-circular progress indicator.
 - Dashboard KPIs, storage usage, skill/score visualization
 - `Half circle` — gauge-style meter (e.g. performance score)
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-tertiary` #525252, `fg-brand-primary` #1a3e88, `bg-primary` #ffffff, `bg-quaternary` #e5e5e5
+- Spacing: `spacing-xs` 4
+- Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Display xs/Semibold` 24/32, `Display sm/Semibold` 30/38, `Display md/Semibold` 36/44, `Display lg/Semibold` 48/60
+
 ---
 
 ### 12. Tooltip
@@ -337,6 +402,12 @@ Contextual information popup triggered on hover/focus.
 **When to use:**
 - Explaining icons, abbreviations, truncated text, or disabled controls
 - Always pair with a keyboard-focusable trigger for accessibility
+
+**Tokens used** (from Figma)
+- Color: `text-white` #ffffff, `bg-primary` #ffffff, `bg-primary-solid` #0a0a0a
+- Radius: `radius-md` 8
+- Spacing: `spacing-xxs` 2, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18
 
 ---
 
@@ -362,6 +433,12 @@ Question-mark icon that reveals a tooltip on interaction.
 - Beside form labels to explain field purpose or expected format
 - On settings to clarify impact of a toggle or option
 
+**Tokens used** (from Figma)
+- Color: `text-white` #ffffff, `fg-quaternary` #a3a3a3, `fg-quaternary_hover` #737373, `bg-primary` #ffffff, `bg-primary-solid` #0a0a0a
+- Radius: `radius-md` 8
+- Spacing: `spacing-xxs` 2, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18
+
 ---
 
 ### 14. File Upload
@@ -383,6 +460,12 @@ Drag-and-drop file upload zone with queued file list.
 - Document uploads, image uploads, bulk file imports
 - `Progress bar` — shows individual file progress as a bar
 - `Progress fill` — shows progress as a fill overlay on the file icon
+
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-brand-secondary` #173779, `text-success-primary` #16a34a, `fg-secondary` #404040, `fg-quaternary` #a3a3a3, `fg-brand-primary` #1a3e88, `fg-white` #ffffff, `fg-success-primary` #16a34a, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, …
+- Radius: `radius-none` 0, `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24
+- Type: `Text xs/Regular` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
 
 ---
 
@@ -413,6 +496,12 @@ Rich text editor with formatting toolbar.
 - `Default` — toolbar pinned at top
 - `Floating toolbar` — toolbar appears on text selection
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-tertiary` #525252, `fg-quaternary` #a3a3a3, `border-primary` #d4d4d4, `border-secondary_alt` #0000001a, `bg-primary` #ffffff, `utility-neutral-900` #171717
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text md/Regular` 16/24
+
 ---
 
 ### 16. Button Group
@@ -433,6 +522,12 @@ Segmented control / button bar for toggling between views or options.
 - View switchers (list/grid/map), filter toggles, segmented controls
 - `Icon Only` — compact toolbar actions
 - `Leading` — icon + text per segment
+
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `fg-quaternary` #a3a3a3, `border-primary` #d4d4d4, `bg-primary` #ffffff
+- Radius: `radius-md` 8
+- Spacing: `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text sm/Semibold` 14/20
 
 ---
 
@@ -457,6 +552,12 @@ Date selection dropdown with calendar.
 - `Dual dates` — date range (check-in/check-out, reporting period)
 - `Available times` — date + time slot selection (booking, scheduling)
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-quaternary` #737373, `text-placeholder` #737373, `text-brand-secondary` #173779, `fg-secondary` #404040, `fg-quaternary` #a3a3a3, `fg-brand-primary` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, …
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-2xl` 16, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24
+
 ---
 
 ### 18. Date Picker Modal
@@ -475,6 +576,12 @@ Full-screen or centered modal date picker.
 
 **When to use:**
 - Mobile date selection, complex date range picking, calendar-heavy flows where the dropdown would be too small
+
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-white` #ffffff, `text-brand-secondary` #173779, `fg-secondary` #404040, `fg-quaternary` #a3a3a3, `fg-brand-primary` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-overlay` #0a0a0a, …
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-2xl` 16
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `container-padding-mobile` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32, `container-padding-desktop` 32, `spacing-8xl` 80
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24
 
 ---
 
@@ -500,6 +607,12 @@ Full-featured color selection component.
 - `Palette picker` / `Brand swatches` / `Gray swatches` — constrained palette selection
 - `Gradient stops` — gradient editor
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `fg-white` #ffffff, `fg-quaternary` #a3a3a3, `fg-brand-primary_alt` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `bg-primary` #ffffff, `bg-tertiary` #f5f5f5, `utility-brand-600` #1a3e88, …
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text lg/Semibold` 18/28
+
 ---
 
 ### 20. Color Picker Dropdown
@@ -518,6 +631,12 @@ Compact color picker triggered from a swatch or input.
 
 **Boolean properties:**
 - `Percentage input` (default: on)
+
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-brand-secondary` #173779, `fg-white` #ffffff, `fg-quaternary` #a3a3a3, `fg-brand-primary_alt` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `bg-primary` #ffffff, …
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
 
 ---
 
@@ -540,6 +659,12 @@ Full calendar view for event display and scheduling.
 - `Month view` — overview of events across a month
 - `Week view` — detailed weekly schedule with time slots
 - `Day view` — granular daily schedule
+
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-brand-secondary` #173779, `fg-white` #ffffff, `fg-quaternary` #a3a3a3, `fg-brand-primary` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, …
+- Radius: `radius-xxs` 2, `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
+- Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28, `Text lg/Bold` 18/28
 
 ---
 
@@ -567,6 +692,12 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 - `Search simple` / `Search advanced` — filterable dropdown menus
 - `Account *` — user/profile menus in navigation
 
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-placeholder` #737373, `fg-white` #ffffff, `fg-quaternary` #a3a3a3, `fg-brand-primary` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, …
+- Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24
+- Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20
+
 ---
 
 ### 23. Context Menu
@@ -586,6 +717,12 @@ Right-click context menu.
 **When to use:**
 - Right-click actions on table rows, canvas elements, file items
 - `Advanced` — includes keyboard shortcuts and sub-menus
+
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `text-secondary_hover` #262626, `text-quaternary` #737373, `fg-quaternary` #a3a3a3, `fg-brand-primary` #1a3e88, `fg-success-secondary` #22c55e, `border-secondary` #e5e5e5, `border-secondary_alt` #0000001a, `bg-primary` #ffffff, `bg-primary_hover` #fafafa
+- Radius: `radius-sm` 6, `radius-md` 8
+- Spacing: `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
+- Type: `Text xs/Medium` 12/18, `Text sm/Semibold` 14/20
 
 ---
 

@@ -39,6 +39,12 @@ The primary action component used throughout the system.
 - `Icon only` — toolbar actions, compact UI where the icon is universally understood (close, settings, share)
 - `Loading` — show after user clicks to indicate processing; always include loading text for screen readers
 
+**Tokens used** (from Figma)
+- Color: `bg-brand-solid` #1a3e88, `text-white` #ffffff, `bg-primary` #ffffff, `border-primary` #d4d4d4, `text-secondary` #404040, `text-tertiary` #525252, `text-brand-secondary` #173779, `fg-brand-secondary_alt` #1d4597, `fg-tertiary` #525252, `fg-quaternary` #a3a3a3, `bg-brand-solid_hover` #173779, `bg-secondary_hover` #f5f5f5, …
+- Radius: `radius-xs` 4, `radius-md` 8
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
+
 ---
 
 ### 2. Button Destructive
@@ -69,6 +75,12 @@ Red/destructive-themed button for irreversible or high-risk actions.
 - Always require confirmation (modal or inline) before executing the destructive action
 - Use `Secondary` or `Tertiary` hierarchy for less prominent destructive options (e.g. "Remove" in a list item)
 
+**Tokens used** (from Figma)
+- Color: `bg-error-solid` #dc2626, `text-white` #ffffff, `fg-error-secondary` #ef4444, `text-error-primary` #dc2626, `bg-primary` #ffffff, `border-error_subtle` #fca5a5, `bg-error-solid_hover` #b91c1c, `fg-error-primary` #dc2626, `text-error-primary_hover` #b91c1c, `bg-error-primary` #fef2f2, `fg-white` #ffffff
+- Radius: `radius-xs` 4, `radius-md` 8
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
+
 ---
 
 ### 3. Button Utility
@@ -93,6 +105,12 @@ Small icon-only utility button for compact controls.
 - Toolbar icon buttons in dense UIs
 - Card action buttons (overflow menu trigger, bookmark)
 
+**Tokens used** (from Figma)
+- Color: `fg-quaternary` #a3a3a3, `bg-primary` #ffffff, `border-primary` #d4d4d4, `fg-quaternary_hover` #737373, `text-white` #ffffff, `bg-primary-solid` #0a0a0a, `bg-primary_hover` #fafafa
+- Radius: `radius-sm` 6, `radius-md` 8
+- Spacing: `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
+- Type: `Text xs/Semibold` 12/18
+
 ---
 
 ### 4. Button Close X
@@ -113,6 +131,11 @@ Dedicated close/dismiss button.
 **When to use:**
 - Closing modals, dialogs, toasts, banners, slideout panels
 - `Dark background=True` — when placed over dark overlays or images
+
+**Tokens used** (from Figma)
+- Color: `fg-quaternary` #a3a3a3, `bg-primary` #ffffff, `fg-quaternary_hover` #737373, `bg-primary_hover` #fafafa, `fg-white` #ffffff
+- Radius: `radius-md` 8
+- Spacing: `spacing-md` 8
 
 ---
 
@@ -139,6 +162,12 @@ Branded social login/signup button.
 - `Gray` — neutral monochrome style
 - `Color` — uses the social platform's full-color logo on a neutral button
 
+**Tokens used** (from Figma)
+- Color: `fg-white` #ffffff, `text-white` #ffffff, `bg-primary` #ffffff, `text-secondary` #404040, `border-primary` #d4d4d4, `text-secondary_hover` #262626, `bg-primary_hover` #fafafa, `fg-quaternary` #a3a3a3, `fg-quaternary_hover` #737373
+- Radius: `radius-md` 8
+- Spacing: `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
+
 ---
 
 ### 6. Social Button Group
@@ -160,6 +189,12 @@ Pre-composed group of social login buttons.
 - Login/register pages with multiple social providers
 - `Icons` — compact icon-only row when space is limited
 
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `bg-primary` #ffffff, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `fg-white` #ffffff, `text-white` #ffffff
+- Radius: `radius-md` 8
+- Spacing: `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
+
 ---
 
 ### 7. Mobile App Store Badge
@@ -179,6 +214,9 @@ App store download badges.
 
 **When to use:**
 - Marketing pages, app landing pages, footer CTAs for app downloads
+
+**Tokens used** (from Figma)
+- Color: `fg-primary` #171717, `bg-primary` #ffffff
 
 ---
 
@@ -209,6 +247,12 @@ Compact label for categorization, filtering, or status indication.
 - `Avatar` — tags with a user avatar (assigned users, mentions)
 - `Dot` — status indicator tags (online/offline, severity)
 
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `bg-primary` #ffffff, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `bg-tertiary` #f5f5f5, `fg-success-secondary` #22c55e
+- Radius: `radius-xs` 4, `radius-sm` 6, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
+- Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20
+
 ---
 
 ### 9. Dropdown Menu
@@ -237,6 +281,12 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 - `Integrations` — integration/app picker menus
 - `Account *` — user/profile menus in navigation headers
 
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-brand-primary` #1a3e88, `bg-brand-solid` #1a3e88, `fg-quaternary` #a3a3a3, `text-placeholder` #737373, `fg-success-secondary` #22c55e, …
+- Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24
+- Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20
+
 ---
 
 ### 10. Context Menu
@@ -256,6 +306,12 @@ Right-click context menu.
 **When to use:**
 - Right-click actions on table rows, canvas elements, file items, cards
 - `Advanced` — includes keyboard shortcut hints and sub-menus
+
+**Tokens used** (from Figma)
+- Color: `text-secondary` #404040, `text-quaternary` #737373, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `bg-primary` #ffffff, `border-secondary_alt` #0000001a, `fg-brand-primary` #1a3e88, `fg-success-secondary` #22c55e, `text-secondary_hover` #262626, `bg-primary_hover` #fafafa
+- Radius: `radius-sm` 6, `radius-md` 8
+- Spacing: `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
+- Type: `Text xs/Medium` 12/18, `Text sm/Semibold` 14/20
 
 ---
 
@@ -288,6 +344,12 @@ Vertical sidebar navigation for applications.
 - `Sidebar` — full sidebar with account card, featured card, and nested navigation
 - Always use `Breakpoint=Mobile` for responsive mobile nav (typically as a slide-out overlay)
 
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `border-primary` #d4d4d4, `bg-brand-solid` #1a3e88, `fg-brand-primary_alt` #1a3e88, `text-brand-secondary` #173779, `fg-quaternary` #a3a3a3, `bg-overlay` #0a0a0a, `fg-success-secondary` #22c55e, `utility-neutral-700` #404040, …
+- Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
+- Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-7xl` 64
+- Type: `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24
+
 ---
 
 ### 12. Header Navigation
@@ -310,6 +372,12 @@ Horizontal top navigation bar for applications.
 - Application top bar with logo, nav links, search, and user account
 - Pair with Sidebar navigation for apps that use both horizontal and vertical nav
 - `Mobile` breakpoint collapses nav items into a hamburger menu
+
+**Tokens used** (from Figma)
+- Color: `text-primary` #171717, `text-tertiary` #525252, `text-quaternary` #737373, `fg-tertiary` #525252, `bg-primary` #ffffff, `border-primary` #d4d4d4, `bg-secondary` #fafafa
+- Radius: `radius-md` 8
+- Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24
+- Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
 
 ---
 
@@ -344,6 +412,12 @@ Hierarchical path navigation showing the user's location within the app.
 - `Account dropdowns` — breadcrumbs with dropdown menus at each level (e.g. org > team > project)
 - Use for hierarchies 3+ levels deep; avoid for flat navigation structures
 
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-tertiary` #525252, `text-quaternary` #737373, `text-brand-secondary` #173779, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `bg-brand-solid` #1a3e88, `fg-quaternary` #a3a3a3, `fg-white` #ffffff, `utility-neutral-300` #d4d4d4, `text-tertiary_hover` #404040, …
+- Radius: `radius-none` 0, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
+- Type: `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20
+
 ---
 
 ### 14. Pagination
@@ -375,6 +449,12 @@ Page navigation for paginated content.
 - `Card advanced` — pagination with "rows per page" selector
 - `Pagination dot group` — carousel/slideshow indicators (prefer Dot for < 10 items, Line for visual emphasis)
 - `Carousel image` — image gallery/slideshow navigation
+
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `bg-primary_hover` #fafafa, `text-secondary_hover` #262626
+- Radius: `radius-md` 8, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
+- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
 
 ---
 
@@ -411,6 +491,12 @@ Horizontal tab bar for switching between content panels.
 - `Button minimal` — minimal pill-style tabs
 - `Full width=True` — tabs stretch to fill available width (good for mobile or equal-weight sections)
 
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-quaternary` #737373, `text-brand-secondary` #173779, `bg-brand-primary_alt` #e9edf5, `fg-brand-primary_alt` #1a3e88, `fg-brand-secondary_alt` #1d4597, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `utility-neutral-700` #404040, `utility-neutral-200` #e5e5e5, …
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Medium` 16/24, `Text md/Semibold` 16/24
+
 ---
 
 ### 16. Vertical Tabs
@@ -432,6 +518,12 @@ Vertical tab bar for side-panel navigation within a content area.
 - Settings pages with many sections, documentation side nav, multi-step forms with visible section list
 - `Line` — vertical line indicator (similar to sidebar nav style)
 - Prefer Vertical tabs over Horizontal tabs when there are 6+ tab items
+
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-quaternary` #737373, `text-brand-secondary` #173779, `bg-brand-primary_alt` #e9edf5, `fg-brand-primary_alt` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `utility-neutral-700` #404040, `utility-neutral-200` #e5e5e5, …
+- Radius: `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
+- Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Medium` 16/24, `Text md/Semibold` 16/24
 
 ---
 
@@ -469,6 +561,12 @@ Hierarchical collapsible tree for nested content.
 - File explorers, folder structures, category hierarchies, org charts
 - `Advanced` — tree with checkboxes, drag handles, and multi-level nesting
 - `Simple` — read-only or click-to-navigate tree
+
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #1a3e88, `text-tertiary` #525252, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `fg-white` #ffffff
+- Radius: `radius-sm` 6, `radius-full` 9999
+- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
+- Type: `Text sm/Semibold` 14/20
 
 ---
 
@@ -535,6 +633,12 @@ Multiple progress step components for multi-step workflows:
 - `Text with line` — minimal text-only steps with connecting line
 - `Icons with text` — vertical step list with descriptions (best for complex flows with explanations)
 
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `fg-brand-primary` #1a3e88, `bg-success-solid` #16a34a, `text-secondary` #404040, `text-quaternary` #737373, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `fg-white` #ffffff
+- Radius: `radius-full` 9999
+- Spacing: `spacing-sm` 6
+- Type: `Text xs/Semibold` 12/18, `Text sm/Semibold` 14/20
+
 ---
 
 ### 19. Slide Out Menu
@@ -563,6 +667,12 @@ Side panel that slides in from the edge of the screen.
 - `Calendar event` / `Create event` — event details and creation
 - `A.I. assistant *` — AI chat panel
 - Use slideout menus for secondary workflows that shouldn't replace the main content
+
+**Tokens used** (from Figma)
+- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `border-primary` #d4d4d4, `bg-brand-solid` #1a3e88, `text-brand-secondary` #173779, `fg-brand-primary` #1a3e88, `border-brand` #1d4597, `bg-overlay` #0a0a0a, `text-error-primary` #dc2626, …
+- Radius: `radius-none` 0, `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
+- Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32, `spacing-5xl` 40, `spacing-6xl` 48, `spacing-7xl` 64
+- Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28, `Text lg/Bold` 18/28, `Text xl/Semibold` 20/30, `Display sm/Semibold` 30/38
 
 ---
 
