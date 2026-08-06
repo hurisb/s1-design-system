@@ -1,14 +1,15 @@
 ---
 name: s1-design-system
 description: >
-  The Saltbox One (S1) design system — brand tokens (color, spacing, radius,
-  type scale) and component groups (Typography, Form elements, Navigation,
-  Data display). Use this skill whenever building, reviewing, or specifying
-  any UI for an S1 or Salesforce Commerce Cloud client project — pages,
-  components, prototypes, PRDs, Figma files, or code. Also use when someone
-  asks "what's our token for X", "what component should I use for Y", or
-  wants a design reviewed for S1 brand consistency, even if they don't say
-  "design system" explicitly.
+  The Saltbox One (S1) design system: two-font typography (Space Grotesk for
+  headings, Inter for body), a light/dark semantic color system, spacing,
+  radius and grid tokens, the logo, and component groups — form elements,
+  navigation, and data display. Use this skill whenever building, reviewing,
+  or specifying any UI for an S1 or Salesforce Commerce Cloud client project —
+  pages, components, prototypes, PRDs, Figma files, or code. Also use when
+  someone asks "what's our token/color/font for X", "what component should I
+  use for Y", or wants a design reviewed for S1 brand consistency, even if
+  they don't say "design system" explicitly.
 ---
 
 # S1 Design System
@@ -28,7 +29,7 @@ tokens and components.
 
 ## How this skill is organized
 
-One skill, five reference sections. Claude reads only the section(s)
+One skill, several reference sections. Claude reads only the section(s)
 relevant to the task at hand.
 
 | Section | File | Covers |
@@ -66,8 +67,8 @@ for a semantic variable first; drop to a primitive only when no semantic fits.
   (`neutral-700`, `red-500`) — the semantic name is stable across modes and
   brand refreshes; the raw scale name isn't.
 - **Reuse before you build.** Every component group has a named S1
-  equivalent (see the four reference files) — check there before building
-  a one-off.
+  equivalent (see the form-elements, navigation, and data-display reference
+  files) — check there before building a one-off.
 - **Light and dark mode are both first-class.** Every color token is
   documented with both values; don't ship a state that only works in one
   mode.

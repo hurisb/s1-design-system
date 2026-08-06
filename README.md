@@ -1,8 +1,11 @@
 # S1 Design System — Claude Skill
 
 A Claude Skill that teaches Claude the Saltbox One (S1) design system —
-tokens and component groups — so anyone on the team can build or review
-S1-branded work consistently, without needing to be a designer or developer.
+two-font typography (Space Grotesk for headings, Inter for body), a light/dark
+color system, spacing and layout tokens, the logo, and the component groups
+(form elements, navigation, data display) — so anyone on the team can build or
+review S1-branded work consistently, without needing to be a designer or
+developer.
 
 ## What's inside
 

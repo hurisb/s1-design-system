@@ -5,6 +5,7 @@ This guide is for anyone who wants to use the S1 Design System skill and has
 code or design background needed. Pick the path that matches how you use
 Claude.
 
+- [What the S1 design system covers](#what-the-s1-design-system-covers)
 - [Part 1 — Get the files from GitHub](#part-1--get-the-files-from-github)
 - [Part 2 — Use it in Claude](#part-2--use-it-in-claude)
   - [A. Claude.ai (website) or the desktop app — as a Skill](#a-claudeai-website-or-the-desktop-app--as-a-skill)
@@ -17,6 +18,54 @@ Claude.
 > app, use **2A** (or the no-install option **2C**). If you use Claude in a
 > terminal (Claude Code), use **2B**. When in doubt, **2C** works for everyone
 > and takes two minutes.
+
+---
+
+## What the S1 design system covers
+
+A quick tour of the pieces the skill knows about. You can ask Claude about any
+of these in plain language — you don't need to memorize the names below.
+
+**Fonts — two typefaces**
+- **Space Grotesk** — every heading and display/title.
+- **Inter** — all body text, labels, and UI.
+- Each comes in Regular / Medium / Semibold / Bold (plus italics), on one size
+  scale from 12px (fine print) up to 72px (hero headlines).
+
+**Colors — a light + dark semantic system**
+- You use names that describe *meaning* (`text-primary`, `bg-brand-solid`,
+  `border-error`) instead of raw hex codes, and every color has a **light and a
+  dark** value baked in.
+- Covered: text, borders, icons, and backgrounds; the **S1 brand navy**; status
+  colors (**error / warning / success**); and an extended palette for
+  badges, tags, and charts.
+
+**Spacing & layout**
+- A consistent spacing scale (2, 4, 6, 8, 12, 16, 20, 24 … px) for padding and
+  gaps, a corner-radius scale (2–24px, plus fully round), and a responsive grid
+  (12 columns on desktop, 6 on tablet, 4 on mobile).
+
+**Form elements**
+- Inputs, text areas, selects and multi-selects, checkboxes, radios, toggles,
+  sliders, date and color pickers, file upload, buttons and button groups,
+  tooltips — each with its variants and states (default, hover, focus, error…).
+
+**Navigation**
+- Buttons, tabs, breadcrumbs, sidebars, top bars, pagination, tree views,
+  progress steps, dropdown and context menus, tags, and slide-out panels.
+
+**Data display**
+- Tables, cards, badges, avatars, charts, alerts, notifications, modals, empty
+  states, metrics/KPIs, activity feeds, and page/section headers.
+
+**Logo**
+- The S1 "Saltbox One" logo — the standalone mark and the full lockup, in light
+  and dark, with usage do's and don'ts.
+
+Each of these lives in a file under `skill/references/` (colors in
+`color-variables.md` + `tokens.md`, fonts in `typography.md`, and one file each
+for form elements, navigation, data display, and the logo). Claude opens
+whichever one your question needs.
 
 ---
 
@@ -124,7 +173,7 @@ non-technical. Nothing to configure.
 1. Start a new chat in Claude.
 2. Click the **attach / paperclip (+)** button in the message box.
 3. Attach `SKILL.md` **and** the files inside `skill/references/` (at minimum
-   `tokens.md`), then ask your question.
+   `tokens.md` and `color-variables.md` for colors), then ask your question.
    - Trade-off: you re-attach them each new chat.
 
 **Option 2 — Claude Projects (reusable knowledge, no coding):**
@@ -151,6 +200,7 @@ You don't need to name files or tokens — Claude finds them. Examples by role:
 
 - "Using the S1 design system, what's our primary button style — colors,
   radius, and padding?"
+- "What fonts does S1 use for headings vs body, and at what sizes/weights?"
 - "Build a settings form using S1 form elements. Include labels, an email
   input, a dropdown, and a save button, and use S1 spacing and border tokens."
 - "What S1 component should I use for a list of orders with status badges?"
@@ -182,7 +232,7 @@ You don't need to name files or tokens — Claude finds them. Examples by role:
 - "Explain the S1 design system to me like I'm new here — what are the main
   parts and when would I use each?"
 - "What's the difference between a semantic token like `text-secondary` and a
-  raw one like `neutral-700`, and why does S1 prefer the semantic one?"
+  raw one like `gray-700`, and why does S1 prefer the semantic one?"
 
 > Tip: if an answer seems generic, add "using the S1 design system skill" to
 > your prompt, or (in Projects/no-install mode) start with "using the S1 files
