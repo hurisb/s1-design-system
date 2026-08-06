@@ -18,7 +18,7 @@ The primary action component used throughout the system.
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `xs`, `sm`, `md`, `lg`, `xl` | `xs` |
+| Size | `sm`, `md`, `lg`, `xl` | `sm` |
 | Hierarchy | `Primary`, `Secondary`, `Tertiary`, `Link color`, `Link gray` | `Primary` |
 | State | `Default`, `Hover`, `Focused`, `Disabled`, `Loading` | `Default` |
 | Icon only | `False`, `True` | `False` |
@@ -58,7 +58,7 @@ Red/destructive-themed button for irreversible or high-risk actions.
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `xs`, `sm`, `md`, `lg`, `xl` | `xs` |
+| Size | `sm`, `md`, `lg`, `xl` | `sm` |
 | Hierarchy | `Primary`, `Secondary`, `Tertiary`, `Link` | `Primary` |
 | State | `Default`, `Hover`, `Focused`, `Disabled`, `Loading` | `Default` |
 | Icon only | `False`, `True` | `False` |
@@ -150,7 +150,6 @@ Branded social login/signup button.
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `md`, `lg` | `md` |
 | Social | `Google`, `Facebook`, `Apple`, `Twitter`, `Figma`, `Dribbble` | `Google` |
 | Supporting text | `True`, `False` | `True` |
 | Theme | `Brand`, `Gray`, `Color` | `Brand` |
@@ -181,7 +180,6 @@ Pre-composed group of social login buttons.
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `md`, `lg` | `md` |
 | Style | `Buttons`, `Icons` | `Buttons` |
 | Theme | `Brand`, `Color`, `Gray` | `Brand` |
 
@@ -266,7 +264,7 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 
 | Property | Options | Default |
 |---|---|---|
-| Type | `Button simple`, `Button advanced`, `Button link`, `Icon simple`, `Icon advanced`, `Search simple`, `Search advanced`, `Integrations`, `Account button`, `Account avatar`, `Account card xs`, `Account card sm`, `Account card md`, `Account breadcrumb` | `Button simple` |
+| Type | `Button`, `Icon`, `Avatar` | `Button` |
 | Open | `False`, `True` | `False` |
 
 **Boolean properties:**
@@ -295,6 +293,8 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 **Page:** ↳ Dropdowns
 
 Right-click context menu.
+
+> Audit: node ID not found in master file — needs manual check
 
 **Variant properties:**
 
@@ -327,7 +327,7 @@ Vertical sidebar navigation for applications.
 | Property | Options | Default |
 |---|---|---|
 | Open | `False`, `True` | `False` |
-| Type | `Simple`, `Sections subheadings`, `Sidebar` | `Simple` |
+| Style | `Simple`, `Dual-tier`, `Slim`, `Sections dividers`, `Sections subheadings` | `Simple` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
 **Sub-components:**
@@ -363,6 +363,8 @@ Horizontal top navigation bar for applications.
 
 | Property | Options | Default |
 |---|---|---|
+| Open | `False`, `True` | `False` |
+| Style | `Simple`, `Dual-tier` | `Simple` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
 **Boolean properties:**
@@ -393,7 +395,7 @@ Hierarchical path navigation showing the user's location within the app.
 | Property | Options | Default |
 |---|---|---|
 | Divider | `Chevron`, `Slash` | `Chevron` |
-| Type | `Text`, `Text with line`, `Button`, `Account dropdowns` | `Text` |
+| Type | `Text`, `Text with line`, `Button` | `Text` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
 **Sub-component:** `_Breadcrumb button base` — individual breadcrumb item.
@@ -431,7 +433,7 @@ Page navigation for paginated content.
 
 | Property | Options | Default |
 |---|---|---|
-| Type | `Page default`, `Page minimal center aligned`, `Card default`, `Card minimal right aligned`, `Card minimal left aligned`, `Card button group right aligned`, `Card button group left aligned`, `Card minimal center aligned`, `Card advanced`, `Card advanced center aligned` | `Page default` |
+| Type | `Page default`, `Page minimal center aligned`, `Card default`, `Card minimal right aligned`, `Card minimal left aligned`, `Card minimal center aligned`, `Card button group right aligned`, `Card button group left aligned`, `Card button group center aligned` | `Page default` |
 | Shape | `Square`, `Circle` | `Square` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
@@ -533,6 +535,8 @@ Vertical tab bar for side-panel navigation within a content area.
 **Page:** ↳ Tree views
 
 Hierarchical collapsible tree for nested content.
+
+> Audit: node ID not found in master file — needs manual check
 
 **Variant properties:**
 
@@ -652,7 +656,7 @@ Side panel that slides in from the edge of the screen.
 
 | Property | Options | Default |
 |---|---|---|
-| Type | `Placeholder`, `User profile`, `Messages`, `Message chat`, `Payment method`, `Payment details`, `Plan`, `Team members`, `Filters`, `File upload`, `Labels`, `Project details`, `Notification settings button groups`, `Notification settings checkboxes`, `Notifications`, `Order summary`, `Calendar event`, `User settings`, `A.I. assistant intro`, `A.I. assistant message`, `Share project`, `Create event`, `Integration` | `Placeholder` |
+| Type | `Placeholder`, `User profile`, `Messages`, `Message chat`, `Payment method`, `Payment details`, `Plan`, `Team members`, `Filters`, `File upload`, `Labels`, `Project details`, `Notification settings button groups`, `Notification settings checkboxes`, `Notifications`, `Order summary`, `Calendar event`, `User settings`, `A.I. assistant intro`, `A.I. assistant message` | `Placeholder` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
 **Sub-component:** `_Slide out menu header` — panel header with optional Icon, Supporting text, Tabs.

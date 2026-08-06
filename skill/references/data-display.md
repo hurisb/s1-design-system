@@ -63,6 +63,8 @@ Data table with header row, sortable columns, and interactive cells.
 
 ### 2. Filters Bar
 
+> Audit: node ID not found in master file — needs manual check
+
 **Component:** `Filters bar` (StateGroupId:12232:376165)
 **Page:** ↳ Filters
 
@@ -91,6 +93,8 @@ Horizontal filter controls above content areas.
 
 ### 3. Filters Dropdown Menu
 
+> Audit: node ID not found in master file — needs manual check
+
 **Component:** `Filters dropdown menu` (StateGroupId:12232:366410)
 **Page:** ↳ Filters
 
@@ -117,6 +121,8 @@ Individual filter dropdown trigger with active state.
 
 ### 4. Filters Slideout Menu
 
+> Audit: node ID not found in master file — needs manual check
+
 **Component:** `Filters slideout menu` (StateGroupId:12232:375462)
 **Page:** ↳ Filters
 
@@ -138,6 +144,8 @@ Side panel for complex multi-filter management.
 ---
 
 ### 5. Avatar
+
+> Audit: node ID not found in master file — needs manual check
 
 **Component:** `Avatar` (StateGroupId:11008:45389)
 **Page:** ↳ Avatars
@@ -192,7 +200,7 @@ Status indicator, label, or count badge.
 | Size | `sm`, `md`, `lg` | `sm` |
 | Type | `Pill color`, `Badge color`, `Badge modern` | `Pill color` |
 | Icon | `False`, `Dot`, `Country`, `X close`, `Avatar`, `Icon trailing`, `Icon leading`, `Only` | `False` |
-| Color | `Gray`, `Brand`, `Error`, `Warning`, `Success`, `Slate`, `Sky`, `Blue`, `Indigo`, `Purple`, `Pink`, `Orange` | `Gray` |
+| Color | `Gray`, `Brand`, `Error`, `Warning`, `Success`, `Blue`, `Blue gray`, `Blue light`, `Gray blue`, `Indigo`, `Purple`, `Pink`, `Orange` | `Gray` |
 
 **Instance swaps:** `Flag swap`, `Icon trailing swap`, `Icon leading swap`
 
@@ -253,7 +261,7 @@ Dialog overlay for focused tasks, confirmations, and forms.
 
 | Property | Options | Default |
 |---|---|---|
-| Type | `Stacked left aligned`, `Horizontal`, `Warning stacked left aligned`, `Warning horizontal`, `Destructive stacked left aligned`, `Destructive horizontal`, `Log in`, `Sign up 01`, `Sign up 02`, `Checkboxes`, `Toggles`, `Link field`, `Dropdown`, `Input field`, `Labels`, `Access request`, `Email invite`, `User invite`, `Stacked with team`, `Stacked with team and link`, `Stacked with team and invites`, `Verification code`, `2FA code`, `Password prompt`, `Centered photo`, `Centered photo carousel`, `Centered video carousel`, `Payment details`, `Payment details with image`, `Plan 01`, `Plan 02`, `Payment method`, `Date picker`, `File upload`, `Profile settings`, `User selection`, `Image crop`, `Form 01`, `Form 02`, `Calendar event`, `Banner appearance`, `Appearance settings`, `A.I. assistant`, `User settings`, `New project`, `Text editor`, `Share project`, `Create event`, `Integration`, `New message (empty state)`, `New message (filled)` | `Stacked left aligned` |
+| Type | `Stacked left aligned`, `Horizontal`, `Warning stacked left aligned`, `Warning horizontal`, `Destructive stacked left aligned`, `Destructive horizontal`, `Log in`, `Sign up 01`, `Sign up 02`, `Checkboxes`, `Toggles`, `Link field`, `Dropdown`, `Input field`, `Labels`, `Access request`, `Email invite`, `User invite`, `Stacked with team`, `Stacked with team and link`, `Stacked with team and invites`, `Verification code`, `2FA code`, `Password prompt`, `Centered photo`, `Centered photo carousel`, `Centered video carousel`, `Payment details`, `Payment details with image`, `Plan 01`, `Plan 02`, `Payment method`, `Date picker`, `File upload`, `Profile settings`, `User selection`, `Image crop`, `Form 01`, `Form 02`, `Calendar event`, `Banner appearance`, `Appearance settings`, `A.I. assistant`, `User settings`, `New project`, `Text editor` | `Stacked left aligned` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
 **Sub-components:**
@@ -289,7 +297,7 @@ Placeholder content shown when a section has no data.
 
 | Property | Options | Default |
 |---|---|---|
-| Icon | `Featured icon`, `Illustration`, `File type icon`, `Folder icon`, `Folder icon transparent`, `Users radius`, `Users row`, `Integrations` | `Featured icon` |
+| Icon | `Featured icon`, `Illustration`, `File type icon`, `Folder icon` | `Featured icon` |
 | Size | `sm`, `md`, `lg` | `sm` |
 
 **Boolean properties:**
@@ -323,7 +331,7 @@ Code block display with syntax highlighting area.
 
 | Property | Options | Default |
 |---|---|---|
-| Type | `Horizontal`, `Vertical`, `Vertical with tabs` | `Horizontal` |
+| Type | `Simple`, `Tabs` | `Simple` |
 
 **Boolean properties:**
 - `Mask content` (default: on) — gradient mask at bottom for overflow

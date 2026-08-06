@@ -18,8 +18,8 @@ A single-line text input with label, hint text, help icon, and leading/trailing 
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `sm`, `md`, `lg` | `sm` |
-| Type | `Default`, `Leading dropdown`, `Trailing dropdown`, `Leading text`, `Payment input`, `Tags inner`, `Tags outer`, `Trailing button`, `Password`, `Date and time`, `Number counter horizontal`, `Number counter vertical`, `OTP`, `File upload` | `Default` |
+| Size | `sm`, `md` | `sm` |
+| Type | `Default`, `Leading dropdown`, `Trailing dropdown`, `Leading text`, `Payment input`, `Tags`, `Trailing button` | `Default` |
 | Destructive | `False`, `True` | `False` |
 | State | `Placeholder`, `Filled`, `Focused`, `Disabled` | `Placeholder` |
 
@@ -65,8 +65,7 @@ Multi-line text input for longer-form content.
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `sm`, `md` | `sm` |
-| Type | `Default`, `Tags inner`, `Tags outer` | `Default` |
+| Type | `Default`, `Tags` | `Default` |
 | Destructive | `False`, `True` | `False` |
 | State | `Placeholder`, `Default`, `Focused`, `Disabled` | `Placeholder` |
 
@@ -239,7 +238,7 @@ Single-selection dropdown.
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `sm`, `md`, `lg` | `sm` |
+| Size | `sm`, `md` | `sm` |
 | Type | `Default`, `Icon leading`, `Avatar leading`, `Dot leading`, `Search`, `Tags` | `Default` |
 | State | `Placeholder`, `Default`, `Focused`, `Open`, `Disabled` | `Placeholder` |
 
@@ -269,6 +268,8 @@ Single-selection dropdown.
 ---
 
 ### 8. Multi-select
+
+> Audit: node ID not found in master file — needs manual check
 
 **Component:** `Multi-select` (StateGroupId:12206:577041)
 **Page:** ↳ Select
@@ -515,7 +516,6 @@ Segmented control / button bar for toggling between views or options.
 
 | Property | Options | Default |
 |---|---|---|
-| Size | `sm`, `md` | `sm` |
 | Icon | `False`, `Leading`, `Only` | `False` |
 
 **When to use:**
@@ -543,7 +543,7 @@ Date selection dropdown with calendar.
 | Property | Options | Default |
 |---|---|---|
 | Opened | `False`, `True` | `False` |
-| Type | `Dual dates`, `Single date`, `Available times` | `Dual dates` |
+| Type | `Dual dates`, `Single date` | `Dual dates` |
 | State | `Placeholder`, `Active` | `Placeholder` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
@@ -571,7 +571,7 @@ Full-screen or centered modal date picker.
 
 | Property | Options | Default |
 |---|---|---|
-| Type | `Dual dates`, `Single date`, `Available times` | `Dual dates` |
+| Type | `Dual dates`, `Single date` | `Dual dates` |
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
 **When to use:**
@@ -586,6 +586,8 @@ Full-screen or centered modal date picker.
 ---
 
 ### 19. Color Picker
+
+> Audit: node ID not found in master file — needs manual check
 
 **Component:** `Color picker` (StateGroupId:12423:52680)
 **Page:** ↳ Color pickers
@@ -616,6 +618,8 @@ Full-featured color selection component.
 ---
 
 ### 20. Color Picker Dropdown
+
+> Audit: node ID not found in master file — needs manual check
 
 **Component:** `Color picker dropdown` (StateGroupId:12424:15898)
 **Page:** ↳ Color pickers
@@ -679,7 +683,7 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 
 | Property | Options | Default |
 |---|---|---|
-| Type | `Button simple`, `Button advanced`, `Button link`, `Icon simple`, `Icon advanced`, `Search simple`, `Search advanced`, `Integrations`, `Account button`, `Account avatar`, `Account card xs`, `Account card sm`, `Account card md`, `Account breadcrumb` | `Button simple` |
+| Type | `Button`, `Icon`, `Avatar` | `Button` |
 | Open | `False`, `True` | `False` |
 
 **Boolean properties:**
@@ -701,6 +705,8 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 ---
 
 ### 23. Context Menu
+
+> Audit: node ID not found in master file — needs manual check
 
 **Component:** `Context menu` (StateGroupId:11547:540792)
 **Page:** ↳ Dropdowns
