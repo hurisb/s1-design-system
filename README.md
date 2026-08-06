@@ -79,12 +79,12 @@ darkest steps) — confirmed, not a template default. See the `SKILL.md`
 
 ## Contributing
 
-The skill stays in sync with two Figma files: **foundations** (colors, type,
-spacing, radius, grid, logo) from the
-[S1 Brand Guideline](https://www.figma.com/design/gSG4w3gVwXe5S3YWJsjzZX/S1-Brand-Guideline),
-and **components** from the
-[S1 2.0 component library](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0).
-When a token or component changes in Figma:
+The skill stays in sync with one master Figma file, the
+[S1 Brand Guideline](https://www.figma.com/design/gSG4w3gVwXe5S3YWJsjzZX/S1-Brand-Guideline)
+(`gSG4w3gVwXe5S3YWJsjzZX`) — it holds both the brand guideline (foundations:
+colors, type, spacing, radius, grid, logo) and the full component library
+(form elements, navigation, data display). When a token or component changes
+there:
 
 1. Update the relevant table in `skill/references/`.
 2. Keep the "Status" notes accurate — mark something done once it's

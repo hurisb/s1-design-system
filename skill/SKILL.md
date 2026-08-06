@@ -84,10 +84,11 @@ system** — Space Grotesk (Display/headings) + Inter (Text/body). Component
 groups (Form elements, Navigation, Data display) carry full variant inventories
 **plus a per-component "Tokens used" block**.
 
-Sources: **foundations** (colors, type, spacing, radius, grid, logo) come from
-the S1 Brand Guideline file; **components** come from the S1 2.0 component
-library file. Note: `brand-900`/`brand-950` are intentionally purple (the navy
-ramp deepens to purple at its darkest steps) — confirmed, not a template
+Source: everything — foundations **and** components — comes from the single
+master **S1 Brand Guideline** Figma file
+(`gSG4w3gVwXe5S3YWJsjzZX`), which holds both the brand guideline and the
+component library. Note: `brand-900`/`brand-950` are intentionally purple (the
+navy ramp deepens to purple at its darkest steps) — confirmed, not a template
 default. Effect/shadow styles are out of scope.
 
 ## Use cases

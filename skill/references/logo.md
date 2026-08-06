@@ -1,7 +1,7 @@
 # Logo
 
 The S1 (Saltbox One) brand mark. Always use the official assets from the Figma
-**Logos** page ([node `1083:118533`](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0?node-id=1083-118533)) —
+**Logos** page ([node `1083:118533`](https://www.figma.com/design/gSG4w3gVwXe5S3YWJsjzZX/S1-Brand-Guideline?node-id=1083-118533)) —
 never redraw, retype, or recolor the logo by hand.
 
 ## The two lockups
