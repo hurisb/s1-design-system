@@ -69,9 +69,9 @@ for body. Form Elements, Navigation, and Data Display carry **full variant
 inventories** plus a **per-component "Tokens used" block**.
 
 The responsive grid (breakpoints/columns/gutters) and the S1 logo (lockups,
-light/dark variants, colors, usage) are documented too. One caveat: `brand-900`
-/`brand-950` are purple in the source file (likely un-customized template
-defaults) — flagged in `tokens.md`; verify before use. See the `SKILL.md`
+light/dark variants, colors, usage) are documented too. Note: `brand-900`/
+`brand-950` are intentionally purple (the navy ramp deepens to purple at its
+darkest steps) — confirmed, not a template default. See the `SKILL.md`
 "Status" section.
 
 ## Contributing

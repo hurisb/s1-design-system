@@ -53,10 +53,9 @@ Light mode uses the *Gray (light mode)* ramp; dark mode uses *Gray (dark mode)*.
 | 300 | `#7991c0` | 900 | `#42307d` |
 | 400 | `#4c6cab` | 950 | `#2c1c5f` |
 
-> Heads-up: `brand-900` (`#42307d`) and `brand-950` (`#2c1c5f`) read as **purple**
-> in the source file — they look like un-customized Untitled-UI defaults rather
-> than intentional S1 navy. Verify with the brand owner before using them; the
-> `25`–`800` steps are the S1 navy.
+> Note: the brand ramp is navy through `brand-800`, then deepens to **purple**
+> at `brand-900` (`#42307d`) and `brand-950` (`#2c1c5f`) — this is intentional
+> (confirmed by the brand owner), not a template default.
 
 ### Red (error)
 
@@ -238,6 +237,6 @@ container): **12**, **6**, **5**, **3**, and **2** columns.
   and type scales; container + width tokens; and the responsive grid. Every
   semantic token's light **and** dark value is resolved from these primitives
   (see `color-variables.md`).
-- **Caveat:** `brand-900`/`brand-950` are purple in the source file (likely
-  un-customized Untitled-UI defaults) — flagged above, verify before use.
+- **Note:** `brand-900`/`brand-950` are intentionally purple (confirmed) — the
+  navy ramp deepens to purple at the darkest two steps.
 - **Out of scope:** effect/shadow styles.

@@ -85,9 +85,9 @@ groups (Form elements, Navigation, Data display) carry full variant inventories
 
 Sources: **foundations** (colors, type, spacing, radius, grid, logo) come from
 the S1 Brand Guideline file; **components** come from the S1 2.0 component
-library file. One caveat: `brand-900`/`brand-950` are purple in the source
-(likely un-customized template defaults) — flagged in `tokens.md`, verify before
-use. Effect/shadow styles are out of scope.
+library file. Note: `brand-900`/`brand-950` are intentionally purple (the navy
+ramp deepens to purple at its darkest steps) — confirmed, not a template
+default. Effect/shadow styles are out of scope.
 
 ## Use cases
 
