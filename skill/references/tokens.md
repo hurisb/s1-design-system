@@ -1,13 +1,14 @@
 # Design Tokens — raw values
 
-Every value on this page is pulled directly from the **S1 2.0 Figma file**
-([file](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0)). These are
-the primitive/raw tokens the rest of the system is built from. For *which*
-color to use in a given context (semantic tokens like `text-primary`,
-`bg-brand-solid`), see [`color-variables.md`](color-variables.md); for named
-type styles, see [`typography.md`](typography.md).
+Every value on this page comes from the **S1 Brand Guideline** Figma file
+([S1 Brand Guideline](https://www.figma.com/design/gSG4w3gVwXe5S3YWJsjzZX/S1-Brand-Guideline))
+and its variables export (`s1-ds.json`). These are the primitive/raw tokens the
+rest of the system is built from. For *which* color to use in a given context
+(semantic tokens like `text-primary`, `bg-brand-solid`), see
+[`color-variables.md`](color-variables.md); for named type styles, see
+[`typography.md`](typography.md).
 
-- Colors are hex; a trailing 2 hex digits = alpha (e.g. `#0000001a` = black 10%).
+- Colors are hex; a trailing 2 hex digits = alpha (e.g. `#00000014` = black 8%).
 - Spacing, radius, and sizes are in **px** unless noted.
 - Two typefaces: **Space Grotesk** for Display/headings (`font-family-display`),
   **Inter** for Text/body (`font-family-body`).
@@ -16,90 +17,109 @@ type styles, see [`typography.md`](typography.md).
 
 ## 1. Color primitives
 
-Semantic color variables resolve to these primitive scales. The scales match
-the Tailwind palette for the neutral and accent hues; the **brand** scale is
-S1-custom (navy).
+Semantic color variables resolve to these primitive scales. This is the
+**Untitled-UI-based** S1 palette (updated from the S1 Brand Guideline file); the
+**brand** scale is S1-custom navy.
 
-### Neutral (gray)
+### Neutral (Gray) — separate light & dark ramps
 
-| Step | Hex | | Step | Hex |
-|---|---|---|---|---|
-| neutral-50 | `#fafafa` | | neutral-600 | `#525252` |
-| neutral-100 | `#f5f5f5` | | neutral-700 | `#404040` |
-| neutral-200 | `#e5e5e5` | | neutral-800 | `#262626` |
-| neutral-300 | `#d4d4d4` | | neutral-900 | `#171717` |
-| neutral-400 | `#a3a3a3` | | neutral-950 | `#0a0a0a` |
-| neutral-500 | `#737373` | | | |
+Light mode uses the *Gray (light mode)* ramp; dark mode uses *Gray (dark mode)*.
 
-**Base:** black `#000000` · white `#ffffff`
+| Step | Light ramp | Dark ramp |
+|---|---|---|
+| 25 | `#fdfdfd` | `#fafafa` |
+| 50 | `#fafafa` | `#f7f7f7` |
+| 100 | `#f5f5f5` | `#f0f0f1` |
+| 200 | `#e9eaeb` | `#ececed` |
+| 300 | `#d5d7da` | `#cecfd2` |
+| 400 | `#a4a7ae` | `#94979c` |
+| 500 | `#717680` | `#85888e` |
+| 600 | `#535862` | `#61656c` |
+| 700 | `#414651` | `#373a41` |
+| 800 | `#252b37` | `#22262f` |
+| 900 | `#181d27` | `#13161b` |
+| 950 | `#0a0d12` | `#0c0e12` |
+
+**Base:** white `#ffffff` · black `#000000` · transparent
 
 ### Brand (S1 navy)
 
 | Step | Hex | | Step | Hex |
 |---|---|---|---|---|
-| brand-50 | `#e9edf5` | | brand-600 | `#1a3e88` |
-| brand-200 | `#a5b5d5` | | brand-700 | `#173779` |
-| brand-400 | `#4c6cab` | | brand-800 | `#14306a` |
-| brand-500 | `#1d4597` | | brand-900 | `#11295b` |
+| 25 | `#e9edf5` | 500 | `#1f4796` |
+| 50 | `#d2daea` | 600 | `#193978` |
+| 100 | `#bcc8e0` | 700 | `#132b5a` |
+| 200 | `#a5b5d5` | 800 | `#0c1c3c` |
+| 300 | `#7991c0` | 900 | `#42307d` |
+| 400 | `#4c6cab` | 950 | `#2c1c5f` |
 
-> Brand steps `100`, `300`, and `950` were not surfaced in this extraction pass.
-> Two brand tints used by background tokens are `#d2daea` and `#bcc8e0` (the
-> light values of `bg-brand-primary` and `bg-brand-secondary`).
+> Heads-up: `brand-900` (`#42307d`) and `brand-950` (`#2c1c5f`) read as **purple**
+> in the source file — they look like un-customized Untitled-UI defaults rather
+> than intentional S1 navy. Verify with the brand owner before using them; the
+> `25`–`800` steps are the S1 navy.
 
 ### Red (error)
 
 | Step | Hex | | Step | Hex |
 |---|---|---|---|---|
-| red-50 | `#fef2f2` | | red-500 | `#ef4444` |
-| red-100 | `#fee2e2` | | red-600 | `#dc2626` |
-| red-200 | `#fecaca` | | red-700 | `#b91c1c` |
-| red-300 | `#fca5a5` | | red-950 | `#450a0a` |
-| red-400 | `#f87171` | | | |
+| 25 | `#fffbfa` | 500 | `#f04438` |
+| 50 | `#fef3f2` | 600 | `#d92d20` |
+| 100 | `#fee4e2` | 700 | `#b42318` |
+| 200 | `#fecdca` | 800 | `#912018` |
+| 300 | `#fda29b` | 900 | `#7a271a` |
+| 400 | `#f97066` | 950 | `#55160c` |
 
-### Yellow (warning)
+### Amber (warning)
 
 | Step | Hex | | Step | Hex |
 |---|---|---|---|---|
-| yellow-50 | `#fefce8` | | yellow-500 | `#eab308` |
-| yellow-100 | `#fef9c3` | | yellow-600 | `#ca8a04` |
-| yellow-200 | `#fef08a` | | yellow-700 | `#a16207` |
-| yellow-400 | `#facc15` | | yellow-950 | `#422006` |
+| 25 | `#fffcf5` | 500 | `#f79009` |
+| 50 | `#fffaeb` | 600 | `#dc6803` |
+| 100 | `#fef0c7` | 700 | `#b54708` |
+| 200 | `#fedf89` | 800 | `#93370d` |
+| 300 | `#fec84b` | 900 | `#7a2e0e` |
+| 400 | `#fdb022` | 950 | `#4e1d09` |
 
 ### Green (success)
 
 | Step | Hex | | Step | Hex |
 |---|---|---|---|---|
-| green-50 | `#f0fdf4` | | green-500 | `#22c55e` |
-| green-100 | `#dcfce7` | | green-600 | `#16a34a` |
-| green-200 | `#bbf7d0` | | green-700 | `#15803d` |
-| green-400 | `#4ade80` | | green-950 | `#052e16` |
+| 25 | `#f6fef9` | 500 | `#17b26a` |
+| 50 | `#ecfdf3` | 600 | `#079455` |
+| 100 | `#dcfae6` | 700 | `#067647` |
+| 200 | `#abefc6` | 800 | `#085d3a` |
+| 300 | `#75e0a7` | 900 | `#074d31` |
+| 400 | `#47cd89` | 950 | `#053321` |
 
 ---
 
 ## 2. Extended "utility" palette (badges, tags, charts)
 
-Beyond the core hues above, badges/tags expose a wider palette. These are the
-`Component colors/Utility/*` variables — the exact steps the system uses on
-badge/tag surfaces (`50` = fill, `200` = border, `500` = dot, `700` = text).
+The wider palette used by badges, tags, and charts (`Component colors/Utility/*`).
+Badge/tag `Color` options draw from these hues.
 
-| Color | 50 | 200 | 400 | 500 | 700 |
-|---|---|---|---|---|---|
-| Neutral | `#fafafa` | `#e5e5e5` | `#a3a3a3` | `#737373` | `#404040` |
-| Brand | `#e9edf5` | `#a5b5d5` | `#4c6cab` | `#1d4597` | `#173779` |
-| Red | `#fef2f2` | `#fecaca` | `#f87171` | `#ef4444` | `#b91c1c` |
-| Yellow | `#fefce8` | `#fef08a` | `#facc15` | `#eab308` | `#a16207` |
-| Green | `#f0fdf4` | `#bbf7d0` | `#4ade80` | `#22c55e` | `#15803d` |
-| Slate | `#f8fafc` | `#e2e8f0` | `#94a3b8` | `#64748b` | `#334155` |
-| Sky | `#f0f9ff` | `#bae6fd` | `#38bdf8` | `#0ea5e9` | `#0369a1` |
-| Blue | `#eff6ff` | `#bfdbfe` | `#60a5fa` | `#3b82f6` | `#1d4ed8` |
-| Indigo | `#eef2ff` | `#c7d2fe` | `#818cf8` | `#6366f1` | `#4338ca` |
-| Purple | `#faf5ff` | `#e9d5ff` | `#c084fc` | `#a855f7` | `#7e22ce` |
-| Pink | `#fdf2f8` | `#fbcfe8` | `#f472b6` | `#ec4899` | `#be185d` |
-| Orange | `#fff7ed` | `#fed7aa` | `#fb923c` | `#f97316` | `#c2410c` |
+| Hue | 50 | 200 | 400 | 500 | 600 | 700 |
+|---|---|---|---|---|---|---|
+| brand | `#d2daea` | `#a5b5d5` | `#4c6cab` | `#1f4796` | `#193978` | `#132b5a` |
+| gray | `#fafafa` | `#e9eaeb` | `#a4a7ae` | `#717680` | `#535862` | `#414651` |
+| gray-blue | `#f8f9fc` | `#d5d9eb` | `#717bbc` | `#4e5ba6` | `#3e4784` | `#363f72` |
+| error | `#fef3f2` | `#fecdca` | `#f97066` | `#f04438` | `#d92d20` | `#b42318` |
+| warning | `#fffaeb` | `#fedf89` | `#fdb022` | `#f79009` | `#dc6803` | `#b54708` |
+| success | `#ecfdf3` | `#abefc6` | `#47cd89` | `#17b26a` | `#079455` | `#067647` |
+| green | `#edfcf2` | `#aaf0c4` | `#3ccb7f` | `#16b364` | `#099250` | `#087443` |
+| yellow | `#fefbe8` | `#feee95` | `#fac515` | `#eaaa08` | `#ca8504` | `#a15c07` |
+| blue | `#eff8ff` | `#b2ddff` | `#53b1fd` | `#2e90fa` | `#1570ef` | `#175cd3` |
+| blue-light | `#f0f9ff` | `#b9e6fe` | `#36bffa` | `#0ba5ec` | `#0086c9` | `#026aa2` |
+| blue-dark | `#eff4ff` | `#b2ccff` | `#528bff` | `#2970ff` | `#155eef` | `#004eeb` |
+| indigo | `#eef4ff` | `#c7d7fe` | `#8098f9` | `#6172f3` | `#444ce7` | `#3538cd` |
+| purple | `#f4f3ff` | `#d9d6fe` | `#9b8afb` | `#7a5af8` | `#6938ef` | `#5925dc` |
+| fuchsia | `#fdf4ff` | `#f6d0fe` | `#e478fa` | `#d444f1` | `#ba24d5` | `#9f1ab1` |
+| pink | `#fdf2fa` | `#fcceee` | `#f670c7` | `#ee46bc` | `#dd2590` | `#c11574` |
+| orange | `#fef6ee` | `#f9dbaf` | `#f38744` | `#ef6820` | `#e04f16` | `#b93815` |
+| orange-dark | `#fff4ed` | `#ffd6ae` | `#ff692e` | `#ff4405` | `#e62e05` | `#bc1b06` |
 
-> The core hues also expose step `600`: Brand `#1a3e88`, Red `#dc2626`,
-> Yellow `#ca8a04`, Green `#16a34a`. Badge color options map to these names
-> (see `data-display.md` → Badge → `Color`).
+> Full ramps for each hue exist in the file (steps 25–900); the columns above
+> are the most-used steps (50 fill, 200 border, 500 dot/solid, 700 text).
 
 ---
 
@@ -212,13 +232,12 @@ container): **12**, **6**, **5**, **3**, and **2** columns.
 
 ## Status
 
-- **Done (real values, from Figma):** neutral / brand / red / yellow / green
-  primitive scales; full extended utility palette; spacing, radius, and type
-  scales; container + width tokens.
-- **Verified:** every semantic color's dark value was read directly from the
-  Figma dark-mode swatches (see `color-variables.md`), including the deepest
-  `red/yellow/green-950` steps above.
-- **Follow-ups:** the primitive `25` step across scales and brand steps
-  `100/300/950` (these live only in the Figma primitives collection, which the
-  MCP page listing truncates before reaching — everything actually *used* by
-  the system is captured above). Effect/shadow styles are out of scope.
+- **Complete, from the Brand Guideline variables export:** full primitive
+  scales (Gray light + dark ramps, Brand, Error, Warning, Success — all steps
+  `25`–`950`); the full extended utility palette (17 hues); spacing, radius,
+  and type scales; container + width tokens; and the responsive grid. Every
+  semantic token's light **and** dark value is resolved from these primitives
+  (see `color-variables.md`).
+- **Caveat:** `brand-900`/`brand-950` are purple in the source file (likely
+  un-customized Untitled-UI defaults) — flagged above, verify before use.
+- **Out of scope:** effect/shadow styles.

@@ -4,10 +4,10 @@ This is the layer you actually apply. Bind every element to one of these
 **semantic** variables — never a raw hex or a primitive step directly. Each
 resolves automatically across light and dark modes.
 
-- **Light** and **dark** values were both extracted directly from the S1 2.0
-  Figma file — read from the light and dark swatch columns of the color
-  documentation, and cross-checked against the primitive scales in
-  [`tokens.md`](tokens.md).
+- **Light** and **dark** values are both resolved from the **S1 Brand Guideline**
+  variables export (`s1-ds.json`): each semantic token's per-mode alias resolved
+  against the primitive scales in [`tokens.md`](tokens.md). This is the
+  Untitled-UI-based S1 palette.
 - Rule of thumb: text → `text-*`, icons/indicators → `fg-*`, strokes → `border-*`,
   fills → `bg-*`. Never cross categories.
 
@@ -21,36 +21,36 @@ Use for all text. Never fill text nodes with a raw color.
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `text-primary` | `#171717` | `#fafafa` | Headings, titles, prominent labels |
-| `text-primary_on-brand` | `#ffffff` | `#fafafa` | Primary text on solid brand backgrounds |
-| `text-secondary` | `#404040` | `#d4d4d4` | Labels, section headings |
-| `text-secondary_hover` | `#262626` | `#e5e5e5` | Secondary text, hover |
-| `text-secondary_on-brand` | `#a5b5d5` | `#d4d4d4` | Secondary text on brand backgrounds |
-| `text-tertiary` | `#525252` | `#a3a3a3` | Body/supporting text, descriptions |
-| `text-tertiary_hover` | `#404040` | `#d4d4d4` | Tertiary text, hover |
-| `text-tertiary_on-brand` | `#a5b5d5` | `#a3a3a3` | Tertiary text on brand backgrounds |
-| `text-quaternary` | `#737373` | `#a3a3a3` | Subtle, low-contrast text (footer headings) |
-| `text-quaternary_on-brand` | `#7991c0` | `#a3a3a3` | Quaternary text on brand backgrounds |
+| `text-primary` | `#181d27` | `#f7f7f7` | Headings, titles, prominent labels |
+| `text-primary_on-brand` | `#ffffff` | `#f7f7f7` | Primary text on solid brand backgrounds |
+| `text-secondary` | `#414651` | `#cecfd2` | Labels, section headings |
+| `text-secondary_hover` | `#252b37` | `#ececed` | Secondary text, hover |
+| `text-secondary_on-brand` | `#a5b5d5` | `#cecfd2` | Secondary text on brand backgrounds |
+| `text-tertiary` | `#535862` | `#94979c` | Body/supporting text, descriptions |
+| `text-tertiary_hover` | `#414651` | `#cecfd2` | Tertiary text, hover |
+| `text-tertiary_on-brand` | `#a5b5d5` | `#94979c` | Tertiary text on brand backgrounds |
+| `text-quaternary` | `#717680` | `#94979c` | Subtle, low-contrast text (footer headings) |
+| `text-quaternary_on-brand` | `#7991c0` | `#94979c` | Quaternary text on brand backgrounds |
 
 ### Special & brand text
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
 | `text-white` | `#ffffff` | `#ffffff` | Always-white text |
-| `text-placeholder` | `#737373` | `#a3a3a3` | Input placeholders (neutral-500 for contrast) |
-| `text-brand-primary` | `#11295b` | `#fafafa` | Primary brand headings (pricing headers) |
-| `text-brand-secondary` | `#173779` | `#d4d4d4` | Brand buttons, accents, subheadings |
-| `text-brand-secondary_hover` | `#14306a` | `#e5e5e5` | Brand secondary text, hover |
-| `text-brand-tertiary` | `#1a3e88` | `#a3a3a3` | Lighter accents (metric numbers) |
-| `text-brand-tertiary_alt` | `#1a3e88` | `#fafafa` | Link buttons (lighter in dark) |
+| `text-placeholder` | `#717680` | `#85888e` | Input placeholders (neutral-500 for contrast) |
+| `text-brand-primary` | `#42307d` | `#f7f7f7` | Primary brand headings (pricing headers) |
+| `text-brand-secondary` | `#132b5a` | `#cecfd2` | Brand buttons, accents, subheadings |
+| `text-brand-secondary_hover` | `#0c1c3c` | `#ececed` | Brand secondary text, hover |
+| `text-brand-tertiary` | `#193978` | `#94979c` | Lighter accents (metric numbers) |
+| `text-brand-tertiary_alt` | `#193978` | `#f7f7f7` | Link buttons (lighter in dark) |
 
 ### Semantic text
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `text-error-primary` | `#dc2626` | `#f87171` | Error messages |
-| `text-warning-primary` | `#ca8a04` | `#facc15` | Warning text |
-| `text-success-primary` | `#16a34a` | `#4ade80` | Success text |
+| `text-error-primary` | `#d92d20` | `#f97066` | Error messages |
+| `text-warning-primary` | `#dc6803` | `#fdb022` | Warning text |
+| `text-success-primary` | `#079455` | `#47cd89` | Success text |
 
 ---
 
@@ -60,14 +60,14 @@ Use for all strokes and borders.
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `border-primary` | `#d4d4d4` | `#404040` | High-contrast: inputs, button groups, checkboxes |
-| `border-secondary` | `#e5e5e5` | `#262626` | Default: cards, tables, dividers, file uploaders |
-| `border-secondary_alt` | `#0000001a` | `#262626` | Alpha alt for floating menus (dropdowns, notifications) |
-| `border-tertiary` | `#f5f5f5` | `#262626` | Low-contrast: subtle dividers, chart axes |
-| `border-brand` | `#1d4597` | `#4c6cab` | Active/focused inputs, selected states |
-| `border-brand_alt` | `#1a3e88` | `#404040` | Brand border → gray in dark (banners, footers) |
-| `border-error` | `#ef4444` | `#f87171` | Error borders: inputs, file uploader |
-| `border-error_subtle` | `#fca5a5` | `#ef4444` | Subtle error borders |
+| `border-primary` | `#d5d7da` | `#373a41` | High-contrast: inputs, button groups, checkboxes |
+| `border-secondary` | `#e9eaeb` | `#22262f` | Default: cards, tables, dividers, file uploaders |
+| `border-secondary_alt` | `#00000014` | `#22262f` | Alpha alt for floating menus (dropdowns, notifications) |
+| `border-tertiary` | `#f5f5f5` | `#22262f` | Low-contrast: subtle dividers, chart axes |
+| `border-brand` | `#1f4796` | `#4c6cab` | Active/focused inputs, selected states |
+| `border-brand_alt` | `#193978` | `#373a41` | Brand border → gray in dark (banners, footers) |
+| `border-error` | `#f04438` | `#f97066` | Error borders: inputs, file uploader |
+| `border-error_subtle` | `#fda29b` | `#f04438` | Subtle error borders |
 
 ---
 
@@ -80,29 +80,29 @@ icon or `fg-*` on text.
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `fg-primary` | `#171717` | `#ffffff` | Highest-contrast icons |
-| `fg-secondary` | `#404040` | `#d4d4d4` | High-contrast icons |
-| `fg-secondary_hover` | `#262626` | `#e5e5e5` | Secondary icons, hover |
-| `fg-tertiary` | `#525252` | `#a3a3a3` | Medium-contrast icons |
-| `fg-tertiary_hover` | `#404040` | `#d4d4d4` | Tertiary icons, hover |
-| `fg-quaternary` | `#a3a3a3` | `#737373` | Low-contrast: button/help/input icons |
-| `fg-quaternary_hover` | `#737373` | `#a3a3a3` | Quaternary icons, hover |
+| `fg-primary` | `#181d27` | `#ffffff` | Highest-contrast icons |
+| `fg-secondary` | `#414651` | `#cecfd2` | High-contrast icons |
+| `fg-secondary_hover` | `#252b37` | `#ececed` | Secondary icons, hover |
+| `fg-tertiary` | `#535862` | `#94979c` | Medium-contrast icons |
+| `fg-tertiary_hover` | `#414651` | `#cecfd2` | Tertiary icons, hover |
+| `fg-quaternary` | `#a4a7ae` | `#61656c` | Low-contrast: button/help/input icons |
+| `fg-quaternary_hover` | `#717680` | `#85888e` | Quaternary icons, hover |
 | `fg-white` | `#ffffff` | `#ffffff` | Always-white icons |
 
 ### Brand & semantic
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `fg-brand-primary` | `#1a3e88` | `#1d4597` | Primary brand icons, featured icons, progress bars |
-| `fg-brand-primary_alt` | `#1a3e88` | `#d4d4d4` | Brand icon → gray in dark (active tabs) |
-| `fg-brand-secondary` | `#1d4597` | `#1d4597` | Brand accents, arrows |
-| `fg-brand-secondary_alt` | `#1d4597` | `#525252` | Brand → gray in dark (brand buttons) |
-| `fg-error-primary` | `#dc2626` | `#ef4444` | Primary error icons |
-| `fg-error-secondary` | `#ef4444` | `#f87171` | Input error icons, negative charts |
-| `fg-warning-primary` | `#ca8a04` | `#eab308` | Primary warning icons |
-| `fg-warning-secondary` | `#eab308` | `#facc15` | Secondary warning icons |
-| `fg-success-primary` | `#16a34a` | `#22c55e` | Primary success icons |
-| `fg-success-secondary` | `#22c55e` | `#4ade80` | Dots, online indicators, positive charts |
+| `fg-brand-primary` | `#193978` | `#1f4796` | Primary brand icons, featured icons, progress bars |
+| `fg-brand-primary_alt` | `#193978` | `#cecfd2` | Brand icon → gray in dark (active tabs) |
+| `fg-brand-secondary` | `#1f4796` | `#1f4796` | Brand accents, arrows |
+| `fg-brand-secondary_alt` | `#1f4796` | `#61656c` | Brand → gray in dark (brand buttons) |
+| `fg-error-primary` | `#d92d20` | `#f04438` | Primary error icons |
+| `fg-error-secondary` | `#f04438` | `#f97066` | Input error icons, negative charts |
+| `fg-warning-primary` | `#dc6803` | `#f79009` | Primary warning icons |
+| `fg-warning-secondary` | `#f79009` | `#fdb022` | Secondary warning icons |
+| `fg-success-primary` | `#079455` | `#17b26a` | Primary success icons |
+| `fg-success-secondary` | `#17b26a` | `#47cd89` | Dots, online indicators, positive charts |
 
 ---
 
@@ -114,44 +114,44 @@ Use for fills on frames, shapes, and containers.
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `bg-primary` | `#ffffff` | `#0a0a0a` | Page/card/component backgrounds |
-| `bg-primary_alt` | `#ffffff` | `#171717` | Alt primary (→ secondary in dark) |
-| `bg-primary_hover` | `#fafafa` | `#171717` | Hover for white-bg components (menu items) |
-| `bg-primary-solid` | `#0a0a0a` | `#262626` | Dark solid: tooltips |
-| `bg-secondary` | `#fafafa` | `#171717` | Contrast against white (alternating sections) |
-| `bg-secondary_alt` | `#fafafa` | `#0a0a0a` | Alt secondary (→ primary in dark): border tabs |
-| `bg-secondary_hover` | `#f5f5f5` | `#262626` | Active nav items, date pickers |
-| `bg-secondary-solid` | `#525252` | `#525252` | Dark solid: featured icons |
-| `bg-tertiary` | `#f5f5f5` | `#262626` | Contrast against light bg: toggles |
-| `bg-quaternary` | `#e5e5e5` | `#404040` | Higher contrast: sliders, progress bars |
-| `bg-overlay` | `#0a0a0a` | `#262626` | Modal/dialog backdrop |
+| `bg-primary` | `#ffffff` | `#0c0e12` | Page/card/component backgrounds |
+| `bg-primary_alt` | `#ffffff` | `#13161b` | Alt primary (→ secondary in dark) |
+| `bg-primary_hover` | `#fafafa` | `#22262f` | Hover for white-bg components (menu items) |
+| `bg-primary-solid` | `#0a0d12` | `#13161b` | Dark solid: tooltips |
+| `bg-secondary` | `#fafafa` | `#13161b` | Contrast against white (alternating sections) |
+| `bg-secondary_alt` | `#fafafa` | `#0c0e12` | Alt secondary (→ primary in dark): border tabs |
+| `bg-secondary_hover` | `#f5f5f5` | `#22262f` | Active nav items, date pickers |
+| `bg-secondary-solid` | `#535862` | `#61656c` | Dark solid: featured icons |
+| `bg-tertiary` | `#f5f5f5` | `#22262f` | Contrast against light bg: toggles |
+| `bg-quaternary` | `#e9eaeb` | `#373a41` | Higher contrast: sliders, progress bars |
+| `bg-overlay` | `#0a0d12` | `#22262f` | Modal/dialog backdrop |
 
 ### Brand backgrounds
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `bg-brand-primary` | `#d2daea` | `#1d4597` | Light brand surfaces, check icons |
-| `bg-brand-primary_alt` | `#e9edf5` | `#171717` | Brand fill → secondary in dark (active tabs) |
-| `bg-brand-secondary` | `#bcc8e0` | `#1a3e88` | Featured icons |
-| `bg-brand-solid` | `#1a3e88` | `#1a3e88` | Solid brand: buttons, toggles, messages |
-| `bg-brand-solid_hover` | `#173779` | `#1d4597` | Solid brand, hover |
-| `bg-brand-section` | `#14306a` | `#171717` | Dark brand sections: CTAs, testimonials |
-| `bg-brand-section_subtle` | `#173779` | `#0a0a0a` | Subtle brand section: FAQ |
+| `bg-brand-primary` | `#d2daea` | `#1f4796` | Light brand surfaces, check icons |
+| `bg-brand-primary_alt` | `#d2daea` | `#13161b` | Brand fill → secondary in dark (active tabs) |
+| `bg-brand-secondary` | `#bcc8e0` | `#193978` | Featured icons |
+| `bg-brand-solid` | `#193978` | `#193978` | Solid brand: buttons, toggles, messages |
+| `bg-brand-solid_hover` | `#132b5a` | `#1f4796` | Solid brand, hover |
+| `bg-brand-section` | `#0c1c3c` | `#13161b` | Dark brand sections: CTAs, testimonials |
+| `bg-brand-section_subtle` | `#132b5a` | `#0c0e12` | Subtle brand section: FAQ |
 
 ### Semantic backgrounds
 
 | Variable | Light | Dark | When to use |
 |---|---|---|---|
-| `bg-error-primary` | `#fef2f2` | `#450a0a` | Light error fill: error alerts/buttons |
-| `bg-error-secondary` | `#fee2e2` | `#dc2626` | Error featured icons |
-| `bg-error-solid` | `#dc2626` | `#dc2626` | Solid error: buttons, metrics |
-| `bg-error-solid_hover` | `#b91c1c` | `#ef4444` | Solid error, hover |
-| `bg-warning-primary` | `#fefce8` | `#422006` | Light warning fill |
-| `bg-warning-secondary` | `#fef9c3` | `#ca8a04` | Warning featured icons |
-| `bg-warning-solid` | `#ca8a04` | `#ca8a04` | Solid warning: featured icons |
-| `bg-success-primary` | `#f0fdf4` | `#052e16` | Light success fill |
-| `bg-success-secondary` | `#dcfce7` | `#16a34a` | Success featured icons |
-| `bg-success-solid` | `#16a34a` | `#16a34a` | Solid success: featured icons, metrics |
+| `bg-error-primary` | `#fef3f2` | `#55160c` | Light error fill: error alerts/buttons |
+| `bg-error-secondary` | `#fee4e2` | `#d92d20` | Error featured icons |
+| `bg-error-solid` | `#d92d20` | `#d92d20` | Solid error: buttons, metrics |
+| `bg-error-solid_hover` | `#b42318` | `#f04438` | Solid error, hover |
+| `bg-warning-primary` | `#fffaeb` | `#4e1d09` | Light warning fill |
+| `bg-warning-secondary` | `#fef0c7` | `#dc6803` | Warning featured icons |
+| `bg-warning-solid` | `#dc6803` | `#dc6803` | Solid warning: featured icons |
+| `bg-success-primary` | `#ecfdf3` | `#053321` | Light success fill |
+| `bg-success-secondary` | `#dcfae6` | `#079455` | Success featured icons |
+| `bg-success-solid` | `#079455` | `#079455` | Solid success: featured icons, metrics |
 
 ---
 

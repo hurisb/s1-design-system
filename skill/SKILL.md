@@ -42,8 +42,8 @@ relevant to the task at hand.
 | Logo | `references/logo.md` | The S1 logo — lockups, light/dark variants, colors, and usage do's/don'ts |
 
 **Tokens vs. Color variables:** `tokens.md` holds the raw values (e.g.
-`neutral-900 = #171717`); `color-variables.md` holds the semantic tokens you
-actually apply (e.g. `text-primary = #171717` light / `#fafafa` dark). Reach
+`gray-900 = #181d27`); `color-variables.md` holds the semantic tokens you
+actually apply (e.g. `text-primary = #181d27` light / `#f7f7f7` dark). Reach
 for a semantic variable first; drop to a primitive only when no semantic fits.
 
 ## How to use this skill
@@ -74,20 +74,20 @@ for a semantic variable first; drop to a primitive only when no semantic fits.
 
 ## Status
 
-Foundations are documented in depth **with real values pulled from the S1 2.0
-Figma file**: primitive color scales, the full semantic color set with light
-**and** dark hex (both read directly from the Figma light/dark swatches),
-spacing, radius, and the numeric type scale. Component groups (Form elements,
-Navigation, Data display) now carry their full variant inventories **plus a
-"Tokens used" block per component** — the real color/radius/spacing/type tokens
-each one draws from, extracted from Figma. The responsive grid (breakpoints,
-columns, gutters, margins) and logo (lockups, variants, colors, usage) are also
-documented from Figma.
+Foundations are documented in depth with **real values from the S1 Brand
+Guideline** (Figma + its `s1-ds.json` variables export): full primitive color
+scales (all steps `25`–`950`), the complete semantic color set with light
+**and** dark hex, the extended utility palette, spacing, radius, the numeric
+type scale, the responsive grid, and the logo. Typography is a **two-font
+system** — Space Grotesk (Display/headings) + Inter (Text/body). Component
+groups (Form elements, Navigation, Data display) carry full variant inventories
+**plus a per-component "Tokens used" block**.
 
-The only remaining gap is minor: the primitive `25` step and brand
-`100/300/950` — colors that live solely in the Figma primitives collection and
-aren't used anywhere in the system. Effect/shadow styles are intentionally out
-of scope. See the "Status" notes inside `tokens.md` and `color-variables.md`.
+Sources: **foundations** (colors, type, spacing, radius, grid, logo) come from
+the S1 Brand Guideline file; **components** come from the S1 2.0 component
+library file. One caveat: `brand-900`/`brand-950` are purple in the source
+(likely un-customized template defaults) — flagged in `tokens.md`, verify before
+use. Effect/shadow styles are out of scope.
 
 ## Use cases
 

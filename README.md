@@ -60,27 +60,28 @@ code or design background required to ask Claude questions using this skill.
 
 ## Status
 
-Foundations are documented in depth with **real values pulled from the S1 2.0
-Figma file**: primitive color scales (hex), the full semantic color set with
-light **and** dark values, the extended utility/badge palette, spacing, radius,
-and the numeric type scale. Form Elements, Navigation, and Data Display now
-carry their **full variant inventories** plus a **per-component "Tokens used"
-block** (the real color/radius/spacing/type tokens each component draws from,
-from Figma) — not just a name index.
+Foundations are documented in depth with **real values from the S1 Brand
+Guideline** (Figma + its `s1-ds.json` variables export): full primitive color
+scales (all steps `25`–`950`), the complete semantic color set with light **and**
+dark values, the extended utility palette, spacing, radius, and the numeric type
+scale. Typography is a **two-font system** — Space Grotesk for headings, Inter
+for body. Form Elements, Navigation, and Data Display carry **full variant
+inventories** plus a **per-component "Tokens used" block**.
 
 The responsive grid (breakpoints/columns/gutters) and the S1 logo (lockups,
-light/dark variants, colors, usage) are documented from Figma too. Dark color
-values were read directly from the Figma dark-mode swatches (not inferred).
-
-The only remaining gap is minor: the primitive `25` step and brand `100/300/950`
-color values, which live solely in the Figma primitives collection and aren't
-used anywhere in the system. See the `SKILL.md` "Status" section.
+light/dark variants, colors, usage) are documented too. One caveat: `brand-900`
+/`brand-950` are purple in the source file (likely un-customized template
+defaults) — flagged in `tokens.md`; verify before use. See the `SKILL.md`
+"Status" section.
 
 ## Contributing
 
-This skill is meant to stay in sync with the S1 Figma file
-([S1 2.0](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0)). When
-a token or component changes in Figma:
+The skill stays in sync with two Figma files: **foundations** (colors, type,
+spacing, radius, grid, logo) from the
+[S1 Brand Guideline](https://www.figma.com/design/gSG4w3gVwXe5S3YWJsjzZX/S1-Brand-Guideline),
+and **components** from the
+[S1 2.0 component library](https://www.figma.com/design/wmlelbFhJ0FPS6DwpNXS2Z/S1-2.0).
+When a token or component changes in Figma:
 
 1. Update the relevant table in `skill/references/`.
 2. Keep the "Status" notes accurate — mark something done once it's

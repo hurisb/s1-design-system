@@ -23,8 +23,8 @@ to fake the other.
 
 | Part | Token / value |
 |---|---|
-| Monogram mark | Brand gradient `brand-600 → brand-500` at 90° — `#1a3e88 → #1d4597` |
-| Wordmark ("Saltbox One") | `fg-primary` — `#171717` light · `#ffffff` dark |
+| Monogram mark | Brand gradient `brand-600 → brand-500` at 90° — `#193978 → #1f4796` |
+| Wordmark ("Saltbox One") | `fg-primary` — `#181d27` light · `#ffffff` dark |
 
 The mark keeps its brand gradient in both modes; only the wordmark swaps with
 the mode. See [`color-variables.md`](color-variables.md) for the underlying

@@ -40,7 +40,7 @@ The primary action component used throughout the system.
 - `Loading` — show after user clicks to indicate processing; always include loading text for screen readers
 
 **Tokens used** (from Figma)
-- Color: `bg-brand-solid` #1a3e88, `text-white` #ffffff, `bg-primary` #ffffff, `border-primary` #d4d4d4, `text-secondary` #404040, `text-tertiary` #525252, `text-brand-secondary` #173779, `fg-brand-secondary_alt` #1d4597, `fg-tertiary` #525252, `fg-quaternary` #a3a3a3, `bg-brand-solid_hover` #173779, `bg-secondary_hover` #f5f5f5, …
+- Color: `bg-brand-solid` #193978, `text-white` #ffffff, `bg-primary` #ffffff, `border-primary` #d5d7da, `text-secondary` #414651, `text-tertiary` #535862, `text-brand-secondary` #132b5a, `fg-brand-secondary_alt` #1f4796, `fg-tertiary` #535862, `fg-quaternary` #a4a7ae, `bg-brand-solid_hover` #132b5a, `bg-secondary_hover` #f5f5f5, …
 - Radius: `radius-xs` 4, `radius-md` 8
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
 - Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -76,7 +76,7 @@ Red/destructive-themed button for irreversible or high-risk actions.
 - Use `Secondary` or `Tertiary` hierarchy for less prominent destructive options (e.g. "Remove" in a list item)
 
 **Tokens used** (from Figma)
-- Color: `bg-error-solid` #dc2626, `text-white` #ffffff, `fg-error-secondary` #ef4444, `text-error-primary` #dc2626, `bg-primary` #ffffff, `border-error_subtle` #fca5a5, `bg-error-solid_hover` #b91c1c, `fg-error-primary` #dc2626, `text-error-primary_hover` #b91c1c, `bg-error-primary` #fef2f2, `fg-white` #ffffff
+- Color: `bg-error-solid` #d92d20, `text-white` #ffffff, `fg-error-secondary` #f04438, `text-error-primary` #d92d20, `bg-primary` #ffffff, `border-error_subtle` #fda29b, `bg-error-solid_hover` #b42318, `fg-error-primary` #d92d20, `text-error-primary_hover` #b42318, `bg-error-primary` #fef3f2, `fg-white` #ffffff
 - Radius: `radius-xs` 4, `radius-md` 8
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
 - Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -106,7 +106,7 @@ Small icon-only utility button for compact controls.
 - Card action buttons (overflow menu trigger, bookmark)
 
 **Tokens used** (from Figma)
-- Color: `fg-quaternary` #a3a3a3, `bg-primary` #ffffff, `border-primary` #d4d4d4, `fg-quaternary_hover` #737373, `text-white` #ffffff, `bg-primary-solid` #0a0a0a, `bg-primary_hover` #fafafa
+- Color: `fg-quaternary` #a4a7ae, `bg-primary` #ffffff, `border-primary` #d5d7da, `fg-quaternary_hover` #717680, `text-white` #ffffff, `bg-primary-solid` #0a0d12, `bg-primary_hover` #fafafa
 - Radius: `radius-sm` 6, `radius-md` 8
 - Spacing: `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
 - Type: `Text xs/Semibold` 12/18
@@ -133,7 +133,7 @@ Dedicated close/dismiss button.
 - `Dark background=True` — when placed over dark overlays or images
 
 **Tokens used** (from Figma)
-- Color: `fg-quaternary` #a3a3a3, `bg-primary` #ffffff, `fg-quaternary_hover` #737373, `bg-primary_hover` #fafafa, `fg-white` #ffffff
+- Color: `fg-quaternary` #a4a7ae, `bg-primary` #ffffff, `fg-quaternary_hover` #717680, `bg-primary_hover` #fafafa, `fg-white` #ffffff
 - Radius: `radius-md` 8
 - Spacing: `spacing-md` 8
 
@@ -163,7 +163,7 @@ Branded social login/signup button.
 - `Color` — uses the social platform's full-color logo on a neutral button
 
 **Tokens used** (from Figma)
-- Color: `fg-white` #ffffff, `text-white` #ffffff, `bg-primary` #ffffff, `text-secondary` #404040, `border-primary` #d4d4d4, `text-secondary_hover` #262626, `bg-primary_hover` #fafafa, `fg-quaternary` #a3a3a3, `fg-quaternary_hover` #737373
+- Color: `fg-white` #ffffff, `text-white` #ffffff, `bg-primary` #ffffff, `text-secondary` #414651, `border-primary` #d5d7da, `text-secondary_hover` #252b37, `bg-primary_hover` #fafafa, `fg-quaternary` #a4a7ae, `fg-quaternary_hover` #717680
 - Radius: `radius-md` 8
 - Spacing: `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
 - Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -190,7 +190,7 @@ Pre-composed group of social login buttons.
 - `Icons` — compact icon-only row when space is limited
 
 **Tokens used** (from Figma)
-- Color: `text-secondary` #404040, `bg-primary` #ffffff, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `fg-white` #ffffff, `text-white` #ffffff
+- Color: `text-secondary` #414651, `bg-primary` #ffffff, `border-primary` #d5d7da, `fg-quaternary` #a4a7ae, `fg-white` #ffffff, `text-white` #ffffff
 - Radius: `radius-md` 8
 - Spacing: `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
 - Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -216,7 +216,7 @@ App store download badges.
 - Marketing pages, app landing pages, footer CTAs for app downloads
 
 **Tokens used** (from Figma)
-- Color: `fg-primary` #171717, `bg-primary` #ffffff
+- Color: `fg-primary` #181d27, `bg-primary` #ffffff
 
 ---
 
@@ -248,7 +248,7 @@ Compact label for categorization, filtering, or status indication.
 - `Dot` — status indicator tags (online/offline, severity)
 
 **Tokens used** (from Figma)
-- Color: `text-secondary` #404040, `bg-primary` #ffffff, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `bg-tertiary` #f5f5f5, `fg-success-secondary` #22c55e
+- Color: `text-secondary` #414651, `bg-primary` #ffffff, `border-primary` #d5d7da, `fg-quaternary` #a4a7ae, `bg-tertiary` #f5f5f5, `fg-success-secondary` #17b26a
 - Radius: `radius-xs` 4, `radius-sm` 6, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
 - Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20
@@ -282,7 +282,7 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 - `Account *` — user/profile menus in navigation headers
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-brand-primary` #1a3e88, `bg-brand-solid` #1a3e88, `fg-quaternary` #a3a3a3, `text-placeholder` #737373, `fg-success-secondary` #22c55e, …
+- Color: `bg-primary` #ffffff, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `fg-brand-primary` #193978, `bg-brand-solid` #193978, `fg-quaternary` #a4a7ae, `text-placeholder` #717680, `fg-success-secondary` #17b26a, …
 - Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24
 - Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20
@@ -308,7 +308,7 @@ Right-click context menu.
 - `Advanced` — includes keyboard shortcut hints and sub-menus
 
 **Tokens used** (from Figma)
-- Color: `text-secondary` #404040, `text-quaternary` #737373, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `bg-primary` #ffffff, `border-secondary_alt` #0000001a, `fg-brand-primary` #1a3e88, `fg-success-secondary` #22c55e, `text-secondary_hover` #262626, `bg-primary_hover` #fafafa
+- Color: `text-secondary` #414651, `text-quaternary` #717680, `border-secondary` #e9eaeb, `fg-quaternary` #a4a7ae, `bg-primary` #ffffff, `border-secondary_alt` #00000014, `fg-brand-primary` #193978, `fg-success-secondary` #17b26a, `text-secondary_hover` #252b37, `bg-primary_hover` #fafafa
 - Radius: `radius-sm` 6, `radius-md` 8
 - Spacing: `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
 - Type: `Text xs/Medium` 12/18, `Text sm/Semibold` 14/20
@@ -345,7 +345,7 @@ Vertical sidebar navigation for applications.
 - Always use `Breakpoint=Mobile` for responsive mobile nav (typically as a slide-out overlay)
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `border-primary` #d4d4d4, `bg-brand-solid` #1a3e88, `fg-brand-primary_alt` #1a3e88, `text-brand-secondary` #173779, `fg-quaternary` #a3a3a3, `bg-overlay` #0a0a0a, `fg-success-secondary` #22c55e, `utility-neutral-700` #404040, …
+- Color: `bg-primary` #ffffff, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `border-primary` #d5d7da, `bg-brand-solid` #193978, `fg-brand-primary_alt` #193978, `text-brand-secondary` #132b5a, `fg-quaternary` #a4a7ae, `bg-overlay` #0a0d12, `fg-success-secondary` #17b26a, `utility-neutral-700` #414651, …
 - Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
 - Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-7xl` 64
 - Type: `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24
@@ -374,7 +374,7 @@ Horizontal top navigation bar for applications.
 - `Mobile` breakpoint collapses nav items into a hamburger menu
 
 **Tokens used** (from Figma)
-- Color: `text-primary` #171717, `text-tertiary` #525252, `text-quaternary` #737373, `fg-tertiary` #525252, `bg-primary` #ffffff, `border-primary` #d4d4d4, `bg-secondary` #fafafa
+- Color: `text-primary` #181d27, `text-tertiary` #535862, `text-quaternary` #717680, `fg-tertiary` #535862, `bg-primary` #ffffff, `border-primary` #d5d7da, `bg-secondary` #fafafa
 - Radius: `radius-md` 8
 - Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24
 - Type: `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -413,7 +413,7 @@ Hierarchical path navigation showing the user's location within the app.
 - Use for hierarchies 3+ levels deep; avoid for flat navigation structures
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-tertiary` #525252, `text-quaternary` #737373, `text-brand-secondary` #173779, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `bg-brand-solid` #1a3e88, `fg-quaternary` #a3a3a3, `fg-white` #ffffff, `utility-neutral-300` #d4d4d4, `text-tertiary_hover` #404040, …
+- Color: `bg-primary` #ffffff, `text-primary` #181d27, `text-tertiary` #535862, `text-quaternary` #717680, `text-brand-secondary` #132b5a, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `bg-brand-solid` #193978, `fg-quaternary` #a4a7ae, `fg-white` #ffffff, `utility-neutral-300` #d5d7da, `text-tertiary_hover` #414651, …
 - Radius: `radius-none` 0, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
 - Type: `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20
@@ -451,7 +451,7 @@ Page navigation for paginated content.
 - `Carousel image` — image gallery/slideshow navigation
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `bg-primary_hover` #fafafa, `text-secondary_hover` #262626
+- Color: `bg-primary` #ffffff, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `fg-quaternary` #a4a7ae, `bg-primary_hover` #fafafa, `text-secondary_hover` #252b37
 - Radius: `radius-md` 8, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
 - Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
@@ -492,7 +492,7 @@ Horizontal tab bar for switching between content panels.
 - `Full width=True` — tabs stretch to fill available width (good for mobile or equal-weight sections)
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-quaternary` #737373, `text-brand-secondary` #173779, `bg-brand-primary_alt` #e9edf5, `fg-brand-primary_alt` #1a3e88, `fg-brand-secondary_alt` #1d4597, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `utility-neutral-700` #404040, `utility-neutral-200` #e5e5e5, …
+- Color: `bg-primary` #ffffff, `text-primary` #181d27, `text-secondary` #414651, `text-quaternary` #717680, `text-brand-secondary` #132b5a, `bg-brand-primary_alt` #d2daea, `fg-brand-primary_alt` #193978, `fg-brand-secondary_alt` #1f4796, `border-primary` #d5d7da, `fg-quaternary` #a4a7ae, `utility-neutral-700` #414651, `utility-neutral-200` #e9eaeb, …
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
 - Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Medium` 16/24, `Text md/Semibold` 16/24
@@ -520,7 +520,7 @@ Vertical tab bar for side-panel navigation within a content area.
 - Prefer Vertical tabs over Horizontal tabs when there are 6+ tab items
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-quaternary` #737373, `text-brand-secondary` #173779, `bg-brand-primary_alt` #e9edf5, `fg-brand-primary_alt` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `utility-neutral-700` #404040, `utility-neutral-200` #e5e5e5, …
+- Color: `bg-primary` #ffffff, `text-primary` #181d27, `text-secondary` #414651, `text-quaternary` #717680, `text-brand-secondary` #132b5a, `bg-brand-primary_alt` #d2daea, `fg-brand-primary_alt` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `fg-quaternary` #a4a7ae, `utility-neutral-700` #414651, `utility-neutral-200` #e9eaeb, …
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
 - Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Medium` 16/24, `Text md/Semibold` 16/24
@@ -563,7 +563,7 @@ Hierarchical collapsible tree for nested content.
 - `Simple` — read-only or click-to-navigate tree
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #1a3e88, `text-tertiary` #525252, `border-primary` #d4d4d4, `fg-quaternary` #a3a3a3, `fg-white` #ffffff
+- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #193978, `text-tertiary` #535862, `border-primary` #d5d7da, `fg-quaternary` #a4a7ae, `fg-white` #ffffff
 - Radius: `radius-sm` 6, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
 - Type: `Text sm/Semibold` 14/20
@@ -634,7 +634,7 @@ Multiple progress step components for multi-step workflows:
 - `Icons with text` — vertical step list with descriptions (best for complex flows with explanations)
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `fg-brand-primary` #1a3e88, `bg-success-solid` #16a34a, `text-secondary` #404040, `text-quaternary` #737373, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `fg-quaternary` #a3a3a3, `fg-white` #ffffff
+- Color: `bg-primary` #ffffff, `bg-brand-solid` #193978, `fg-brand-primary` #193978, `bg-success-solid` #079455, `text-secondary` #414651, `text-quaternary` #717680, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `fg-quaternary` #a4a7ae, `fg-white` #ffffff
 - Radius: `radius-full` 9999
 - Spacing: `spacing-sm` 6
 - Type: `Text xs/Semibold` 12/18, `Text sm/Semibold` 14/20
@@ -669,7 +669,7 @@ Side panel that slides in from the edge of the screen.
 - Use slideout menus for secondary workflows that shouldn't replace the main content
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `border-primary` #d4d4d4, `bg-brand-solid` #1a3e88, `text-brand-secondary` #173779, `fg-brand-primary` #1a3e88, `border-brand` #1d4597, `bg-overlay` #0a0a0a, `text-error-primary` #dc2626, …
+- Color: `bg-primary` #ffffff, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `border-primary` #d5d7da, `bg-brand-solid` #193978, `text-brand-secondary` #132b5a, `fg-brand-primary` #193978, `border-brand` #1f4796, `bg-overlay` #0a0d12, `text-error-primary` #d92d20, …
 - Radius: `radius-none` 0, `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
 - Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32, `spacing-5xl` 40, `spacing-6xl` 48, `spacing-7xl` 64
 - Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28, `Text lg/Bold` 18/28, `Text xl/Semibold` 20/30, `Display sm/Semibold` 30/38

@@ -54,7 +54,7 @@ Data table with header row, sortable columns, and interactive cells.
 - Use `sm` size for data-dense tables; `md` for tables with fewer columns
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-brand-secondary` #173779, `fg-quaternary` #a3a3a3, `fg-brand-primary` #1a3e88, …
+- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `text-brand-secondary` #132b5a, `fg-quaternary` #a4a7ae, `fg-brand-primary` #193978, …
 - Radius: `radius-none` 0, `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
 - Type: `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -82,7 +82,7 @@ Horizontal filter controls above content areas.
 - `Advanced *` — complex filter builder with active filter chips
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-placeholder` #737373, `fg-quaternary` #a3a3a3, …
+- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `text-placeholder` #717680, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
 - Type: `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
@@ -108,7 +108,7 @@ Individual filter dropdown trigger with active state.
 - `Counter badge` (default: on) — shows count of active filters
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-secondary` #fafafa, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-placeholder` #737373, `fg-quaternary` #a3a3a3, …
+- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-secondary` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-placeholder` #717680, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
 - Type: `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
@@ -130,7 +130,7 @@ Side panel for complex multi-filter management.
 | Breakpoint | `Desktop`, `Mobile` | `Desktop` |
 
 **Tokens used** (from Figma)
-- Color: `bg-overlay` #0a0a0a, `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-placeholder` #737373, `fg-secondary` #404040, `fg-quaternary` #a3a3a3, …
+- Color: `bg-overlay` #0a0d12, `bg-primary` #ffffff, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-placeholder` #717680, `fg-secondary` #414651, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24, `spacing-5xl` 40
 - Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28
@@ -172,7 +172,7 @@ User/entity avatar with status indicator.
 - `Border=True` — when avatar overlaps other content or in avatar groups
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-tertiary` #f5f5f5, `border-secondary` #e5e5e5, `border-secondary_alt` #0000001a, `text-quaternary` #737373, `fg-quaternary` #a3a3a3, `fg-success-secondary` #22c55e
+- Color: `bg-primary` #ffffff, `bg-tertiary` #f5f5f5, `border-secondary` #e9eaeb, `border-secondary_alt` #00000014, `text-quaternary` #717680, `fg-quaternary` #a4a7ae, `fg-success-secondary` #17b26a
 - Radius: `radius-full` 9999
 - Type: `Text xs/Semibold` 12/18, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28, `Text xl/Semibold` 20/30, `Display xs/Semibold` 24/32
 
@@ -207,7 +207,7 @@ Status indicator, label, or count badge.
 - Color semantics: `Error` = critical/failure, `Warning` = caution, `Success` = positive/complete, `Brand` = branded/highlighted, `Gray` = neutral/default
 
 **Tokens used** (from Figma)
-- Color: core `text-secondary` #404040, `bg-primary` #ffffff, `border-primary` #d4d4d4; utility palette: brand/yellow/green/slate/sky/indigo/purple/blue/pink/orange/red/neutral, steps 50/200/400/500/600/700
+- Color: core `text-secondary` #414651, `bg-primary` #ffffff, `border-primary` #d5d7da; utility palette: brand/yellow/green/slate/sky/indigo/purple/blue/pink/orange/red/neutral, steps 50/200/400/500/600/700
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
 - Type: `Text xs/Medium` 12/18, `Text sm/Medium` 14/20
@@ -235,7 +235,7 @@ Visual separator between content sections.
 - `Button group` — dividers with multiple action options
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-secondary` #fafafa, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-secondary_hover` #262626, `text-tertiary` #525252, `fg-quaternary` #a3a3a3
+- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-secondary` #fafafa, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-secondary_hover` #252b37, `text-tertiary` #535862, `fg-quaternary` #a4a7ae
 - Radius: `radius-md` 8
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
 - Type: `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -271,7 +271,7 @@ Dialog overlay for focused tasks, confirmations, and forms.
 - Media modals: `Centered photo`, `Centered photo carousel`, `Centered video carousel`, `Image crop`
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-overlay` #0a0a0a, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `fg-error-primary` #dc2626, `fg-success-primary` #16a34a, `fg-brand-primary` #1a3e88, `text-brand-secondary` #173779, …; utility palette: neutral/sky/indigo/pink/blue/green/purple/red/orange/brand/fuchsia, steps 50/200/400/500/600/700
+- Color: `bg-primary` #ffffff, `bg-overlay` #0a0d12, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `fg-error-primary` #d92d20, `fg-success-primary` #079455, `fg-brand-primary` #193978, `text-brand-secondary` #132b5a, …; utility palette: neutral/sky/indigo/pink/blue/green/purple/red/orange/brand/fuchsia, steps 50/200/400/500/600/700
 - Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-2xl` 16, `radius-3xl` 20, `radius-full` 9999
 - Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32, `spacing-5xl` 40, `spacing-7xl` 64
 - Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28, `Text lg/Bold` 18/28, `Text xl/Semibold` 20/30, `Display xs/Medium` 24/32, `Display xs/Semibold` 24/32, `Display lg/Medium` 48/60, `Display lg/Semibold` 48/60, `Display xl/Medium` 60/72, `Display xl/Semibold` 60/72, `Display 2xl/Semibold` 72/90
@@ -305,7 +305,7 @@ Placeholder content shown when a section has no data.
 - Always include a clear CTA to help the user populate the empty area
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-white` #ffffff, `fg-secondary` #404040, `fg-quaternary` #a3a3a3, `fg-white` #ffffff, …
+- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-white` #ffffff, `fg-secondary` #414651, `fg-quaternary` #a4a7ae, `fg-white` #ffffff, …
 - Radius: `radius-xs` 4, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32, `spacing-7xl` 64
 - Type: `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28, `Text xl/Semibold` 20/30
@@ -337,7 +337,7 @@ Code block display with syntax highlighting area.
 - `Vertical with tabs` — multi-language/multi-file code examples
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-quaternary` #737373, `fg-quaternary` #a3a3a3, `utility-blue-600` #2563eb, `utility-green-600` #16a34a, `utility-pink-600` #db2777, `utility-red-600` #dc2626, …
+- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-quaternary` #717680, `fg-quaternary` #a4a7ae, `utility-blue-600` #1570ef, `utility-green-600` #099250, `utility-pink-600` #dd2590, `utility-red-600` #d92d20, …
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-3xl` 20
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-4xl` 32
 - Type: `Text sm/Semibold` 14/20
@@ -375,7 +375,7 @@ Timeline of events or notifications.
 - `Connector` — visual line connecting sequential events (timeline style)
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-secondary` #404040, `text-tertiary` #525252, `text-brand-secondary` #173779, `fg-success-secondary` #22c55e, `fg-white` #ffffff; utility palette: brand/blue/indigo/neutral, steps 50/200/300/700
+- Color: `bg-primary` #ffffff, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-secondary` #414651, `text-tertiary` #535862, `text-brand-secondary` #132b5a, `fg-success-secondary` #17b26a, `fg-white` #ffffff; utility palette: brand/blue/indigo/neutral, steps 50/200/300/700
 - Radius: `radius-full` 9999
 - Spacing: `spacing-none` 0, `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-4xl` 32
 - Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20
@@ -411,7 +411,7 @@ Inline alert banner for contextual messages.
 - `Full-width` — spanning the full page width (top banners)
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_alt` #ffffff, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `text-secondary` #404040, `text-tertiary` #525252, `text-brand-secondary` #173779, `fg-brand-primary` #1a3e88, `fg-error-primary` #dc2626, `fg-warning-primary` #ca8a04, `fg-success-primary` #16a34a, `fg-quaternary` #a3a3a3, …
+- Color: `bg-primary` #ffffff, `bg-primary_alt` #ffffff, `bg-brand-solid` #193978, `border-primary` #d5d7da, `text-secondary` #414651, `text-tertiary` #535862, `text-brand-secondary` #132b5a, `fg-brand-primary` #193978, `fg-error-primary` #d92d20, `fg-warning-primary` #dc6803, `fg-success-primary` #079455, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-none` 0, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32
 - Type: `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20
@@ -445,7 +445,7 @@ Toast/snackbar notification popup.
 - Notifications should auto-dismiss after 5-8 seconds unless they contain actions
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-quaternary` #e5e5e5, `border-primary` #d4d4d4, `text-tertiary` #525252, `text-quaternary` #737373, `text-brand-secondary` #173779, `fg-primary` #171717, `fg-secondary` #404040, `fg-brand-primary` #1a3e88, `fg-error-primary` #dc2626, `fg-success-primary` #16a34a, …
+- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-quaternary` #e9eaeb, `border-primary` #d5d7da, `text-tertiary` #535862, `text-quaternary` #717680, `text-brand-secondary` #132b5a, `fg-primary` #181d27, `fg-secondary` #414651, `fg-brand-primary` #193978, `fg-error-primary` #d92d20, `fg-success-primary` #079455, …
 - Radius: `radius-md` 8, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32
 - Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
@@ -478,7 +478,7 @@ Reusable header for card containers.
 - `Avatar=True` — for user/entity cards
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-secondary_alt` #0000001a, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-white` #ffffff, `fg-quaternary` #a3a3a3
+- Color: `bg-primary` #ffffff, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-secondary_alt` #00000014, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-white` #ffffff, `fg-quaternary` #a4a7ae
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
 - Type: `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24
@@ -535,7 +535,7 @@ Reusable header for card containers.
 - `Radar` chart — multi-dimensional comparisons (skill assessments, product feature comparisons)
 
 **Tokens used** (from Figma — Line and bar chart)
-- Color: core `border-tertiary` #f5f5f5, `text-tertiary` #525252, `bg-primary` #ffffff; utility palette: brand steps 200/300/400/500/600/700, `utility-neutral-200` #e5e5e5
+- Color: core `border-tertiary` #f5f5f5, `text-tertiary` #535862, `bg-primary` #ffffff; utility palette: brand steps 200/300/400/500/600/700, `utility-neutral-200` #e9eaeb
 - Spacing: `spacing-none` 0, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-5xl` 40, `spacing-6xl` 48, `spacing-7xl` 64
 - Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text sm/Regular` 14/20
 
@@ -562,7 +562,7 @@ Keyboard-driven command palette (Cmd+K / Ctrl+K).
 - `Stacked` text — two-line items with description
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-overlay` #0a0a0a, `bg-brand-solid` #1a3e88, `bg-primary_hover` #fafafa, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-placeholder` #737373, `fg-secondary` #404040, `fg-quaternary` #a3a3a3, …
+- Color: `bg-primary` #ffffff, `bg-overlay` #0a0d12, `bg-brand-solid` #193978, `bg-primary_hover` #fafafa, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-placeholder` #717680, `fg-secondary` #414651, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-none` 0, `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32, `spacing-5xl` 40, `spacing-11xl` 160
 - Type: `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28
@@ -588,7 +588,7 @@ Inline call-to-action banner within content areas.
 - Place inline within page content (between sections, within settings)
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-brand-solid` #1a3e88, `bg-brand-secondary` #bcc8e0, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-white` #ffffff, `text-placeholder` #737373, `fg-success-primary` #16a34a, `fg-quaternary` #a3a3a3, …
+- Color: `bg-primary` #ffffff, `bg-brand-solid` #193978, `bg-brand-secondary` #bcc8e0, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-white` #ffffff, `text-placeholder` #717680, `fg-success-primary` #079455, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-none` 0, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
 - Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24, `Text md/Semibold` 16/24, `Display sm/Semibold` 30/38
@@ -654,7 +654,7 @@ Chat message bubble with multiple content types.
 - `Link preview` / `Link minimal` — URL sharing with preview cards
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_alt` #171717, `bg-secondary` #fafafa, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `border-brand` #1d4597, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-brand-secondary` #173779, `fg-brand-primary_alt` #1a3e88, `fg-success-secondary` #22c55e, …
+- Color: `bg-primary` #ffffff, `bg-primary_alt` #ffffff, `bg-secondary` #fafafa, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-brand-secondary` #132b5a, `fg-brand-primary_alt` #193978, `fg-success-secondary` #17b26a, …
 - Radius: `radius-none` 0, `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-3xl` 24
 - Type: `Text xs/Regular` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text md/Regular` 16/24
@@ -685,7 +685,7 @@ Spinner/loading animation.
 - `xl` — full-page loading
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-tertiary` #f5f5f5, `text-secondary` #404040, `fg-brand-primary` #1a3e88
+- Color: `bg-primary` #ffffff, `bg-tertiary` #f5f5f5, `text-secondary` #414651, `fg-brand-primary` #193978
 - Spacing: `spacing-xl` 16, `spacing-2xl` 20
 - Type: `Text sm/Medium` 14/20, `Text lg/Medium` 18/28
 
@@ -721,7 +721,7 @@ KPI/metric display card.
 - `Icon *` — metric with featured icon
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-success-secondary` #dcfce7, `bg-success-solid` #16a34a, `bg-brand-secondary` #bcc8e0, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-brand-secondary` #173779, `text-success-primary` #16a34a, …
+- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-success-secondary` #dcfae6, `bg-success-solid` #079455, `bg-brand-secondary` #bcc8e0, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-brand-secondary` #132b5a, `text-success-primary` #079455, …
 - Radius: `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
 - Type: `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24, `Display sm/Semibold` 30/38, `Display md/Semibold` 36/44
@@ -756,7 +756,7 @@ Top-level page header with title, actions, and optional banner.
 - `* centered` — centered layout for marketing-style pages
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-placeholder` #737373, `text-white` #ffffff, `fg-quaternary` #a3a3a3, …
+- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `text-placeholder` #717680, `text-white` #ffffff, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-xs` 4, `radius-md` 8, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24, `spacing-4xl` 32, `spacing-7xl` 64
 - Type: `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text xl/Semibold` 20/30
@@ -793,7 +793,7 @@ Header for content sections within a page.
 - `Button group` — section with segmented view controls
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-primary` #171717, `text-secondary` #404040, `text-tertiary` #525252, `text-quaternary` #737373, `text-placeholder` #737373, `text-white` #ffffff, `fg-quaternary` #a3a3a3, …
+- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `text-placeholder` #717680, `text-white` #ffffff, `fg-quaternary` #a4a7ae, …
 - Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
 - Type: `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Semibold` 16/24
@@ -826,7 +826,7 @@ Footer for content sections and cards.
 - `Section` — full-width section footer
 
 **Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #1a3e88, `border-primary` #d4d4d4, `border-secondary` #e5e5e5, `text-secondary` #404040, `text-secondary_hover` #262626, `text-tertiary` #525252, `text-white` #ffffff, `fg-quaternary` #a3a3a3
+- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `text-secondary` #414651, `text-secondary_hover` #252b37, `text-tertiary` #535862, `text-white` #ffffff, `fg-quaternary` #a4a7ae
 - Radius: `radius-md` 8
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20, `spacing-3xl` 24
 - Type: `Text sm/Semibold` 14/20
