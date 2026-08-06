@@ -47,15 +47,15 @@ of these in plain language — you don't need to memorize the names below.
 
 **Form elements**
 - Inputs, text areas, selects and multi-selects, checkboxes, radios, toggles,
-  sliders, date and color pickers, file upload, buttons and button groups,
+  sliders, date pickers, file upload, buttons and button groups,
   tooltips — each with its variants and states (default, hover, focus, error…).
 
 **Navigation**
-- Buttons, tabs, breadcrumbs, sidebars, top bars, pagination, tree views,
-  progress steps, dropdown and context menus, tags, and slide-out panels.
+- Buttons, tabs, breadcrumbs, sidebars, top bars, pagination,
+  progress steps, dropdown menus, tags, and slide-out panels.
 
 **Data display**
-- Tables, cards, badges, avatars, charts, alerts, notifications, modals, empty
+- Tables, cards, badges, charts, alerts, notifications, modals, empty
   states, metrics/KPIs, activity feeds, and page/section headers.
 
 **Logo**

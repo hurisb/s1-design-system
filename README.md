@@ -21,7 +21,7 @@ s1-design-system/
         ├── color-variables.md   <- semantic colors w/ real light+dark hex
         ├── typography.md        <- fonts, weights, real size/line-height, usage
         ├── form-elements.md     <- inputs, buttons, selects, pickers, etc.
-        ├── navigation.md        <- nav bars, tabs, breadcrumbs, tree views
+        ├── navigation.md        <- nav bars, tabs, breadcrumbs, pagination
         ├── data-display.md      <- tables, cards, badges, charts, alerts
         └── logo.md              <- S1 logo lockups, variants, usage
 ```

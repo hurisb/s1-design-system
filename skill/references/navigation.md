@@ -287,35 +287,7 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 
 ---
 
-### 10. Context Menu
-
-**Component:** `Context menu` (StateGroupId:11547:540792)
-**Page:** ↳ Dropdowns
-
-Right-click context menu.
-
-> Audit: node ID not found in master file — needs manual check
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Type | `Simple`, `Advanced` | `Simple` |
-| Open | `False`, `True` | `False` |
-
-**When to use:**
-- Right-click actions on table rows, canvas elements, file items, cards
-- `Advanced` — includes keyboard shortcut hints and sub-menus
-
-**Tokens used** (from Figma)
-- Color: `text-secondary` #414651, `text-quaternary` #717680, `border-secondary` #e9eaeb, `fg-quaternary` #a4a7ae, `bg-primary` #ffffff, `border-secondary_alt` #00000014, `fg-brand-primary` #193978, `fg-success-secondary` #17b26a, `text-secondary_hover` #252b37, `bg-primary_hover` #fafafa
-- Radius: `radius-sm` 6, `radius-md` 8
-- Spacing: `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
-- Type: `Text xs/Medium` 12/18, `Text sm/Semibold` 14/20
-
----
-
-### 11. Sidebar Navigation
+### 10. Sidebar Navigation
 
 **Component:** `Sidebar navigation` (StateGroupId:1158:90768)
 **Page:** ↳ Application navigation
@@ -352,7 +324,7 @@ Vertical sidebar navigation for applications.
 
 ---
 
-### 12. Header Navigation
+### 11. Header Navigation
 
 **Component:** `Header navigation` (StateGroupId:1207:1678)
 **Page:** ↳ Application navigation
@@ -383,7 +355,7 @@ Horizontal top navigation bar for applications.
 
 ---
 
-### 13. Breadcrumbs
+### 12. Breadcrumbs
 
 **Component:** `Breadcrumbs` (StateGroupId:1122:153)
 **Page:** ↳ Breadcrumbs
@@ -422,7 +394,7 @@ Hierarchical path navigation showing the user's location within the app.
 
 ---
 
-### 14. Pagination
+### 13. Pagination
 
 **Component:** `Pagination` (StateGroupId:1115:68622)
 **Page:** ↳ Pagination
@@ -460,7 +432,7 @@ Page navigation for paginated content.
 
 ---
 
-### 15. Horizontal Tabs
+### 14. Horizontal Tabs
 
 **Component:** `Horizontal tabs` (StateGroupId:1118:69893)
 **Page:** ↳ Tabs
@@ -501,7 +473,7 @@ Horizontal tab bar for switching between content panels.
 
 ---
 
-### 16. Vertical Tabs
+### 15. Vertical Tabs
 
 **Component:** `Vertical tabs` (StateGroupId:1397:9880)
 **Page:** ↳ Tabs
@@ -529,52 +501,7 @@ Vertical tab bar for side-panel navigation within a content area.
 
 ---
 
-### 17. Tree View
-
-**Component:** `Tree view` (StateGroupId:12451:566966)
-**Page:** ↳ Tree views
-
-Hierarchical collapsible tree for nested content.
-
-> Audit: node ID not found in master file — needs manual check
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Type | `Simple`, `Advanced` | `Simple` |
-| Size | `sm`, `md` | `sm` |
-
-**Sub-component:** `_Tree view item` — individual tree node.
-
-| Property | Options | Default |
-|---|---|---|
-| Size | `sm`, `md` | `sm` |
-| State | `Default`, `Hover` | `Default` |
-| Open | `False`, `True` | `False` |
-| Selected | `False`, `True` | `False` |
-
-**Boolean properties (item):**
-- `Icon` (default: on) — file/folder type icon
-- `Checkbox` (default: on) — selectable tree nodes
-- `Drag handle` (default: on) — reorderable nodes
-- `Chevron` (default: on) — expand/collapse indicator
-- `Level 2`, `Level 3`, `Level 4` (default: on) — nested child levels
-
-**When to use:**
-- File explorers, folder structures, category hierarchies, org charts
-- `Advanced` — tree with checkboxes, drag handles, and multi-level nesting
-- `Simple` — read-only or click-to-navigate tree
-
-**Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-secondary` #fafafa, `bg-brand-solid` #193978, `text-tertiary` #535862, `border-primary` #d5d7da, `fg-quaternary` #a4a7ae, `fg-white` #ffffff
-- Radius: `radius-sm` 6, `radius-full` 9999
-- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
-- Type: `Text sm/Semibold` 14/20
-
----
-
-### 18. Progress Steps
+### 16. Progress Steps
 
 Multiple progress step components for multi-step workflows:
 
@@ -645,7 +572,7 @@ Multiple progress step components for multi-step workflows:
 
 ---
 
-### 19. Slide Out Menu
+### 17. Slide Out Menu
 
 **Component:** `Slide out menu` (StateGroupId:1240:137582)
 **Page:** ↳ Slideout menus
@@ -708,7 +635,6 @@ Always use the same size across related navigation elements for visual consisten
 - Use **Tabs** for switching between views within the same page/context
 - Use **Breadcrumbs** for hierarchical depth (3+ levels) — always show the full path
 - Use **Progress steps** for sequential multi-step flows — never for general navigation
-- Use **Tree views** only for genuinely hierarchical data (files, categories) — not for flat lists
 
 ### Navigation Selection Guide
 - **Top-level app sections (3-7 items):** Header navigation or Sidebar navigation
@@ -717,10 +643,8 @@ Always use the same size across related navigation elements for visual consisten
 - **Hierarchical location indicator:** Breadcrumbs
 - **Paginated data (tables, lists):** Pagination
 - **Sequential workflow (onboarding, checkout):** Progress steps
-- **Nested hierarchy (files, folders):** Tree view
 - **Secondary panel content:** Slide out menu
 - **Action menu from a button/icon:** Dropdown menu
-- **Right-click actions:** Context menu
 - **Image/content carousel:** Pagination dot group + Carousel arrows
 
 ### Tags
@@ -745,7 +669,6 @@ Always use the same size across related navigation elements for visual consisten
 - Breadcrumbs: last item (current page) should not be a link
 - Progress steps: announce step status to screen readers ("Step 2 of 4: Current")
 - Dropdown menus: support Escape to close, arrow keys to navigate items, Enter to select
-- Tree views: support arrow keys for navigation, Enter to expand/collapse, Space to select
 - Focus must be visible on every interactive element (all components include `Focused` state)
 - Slide out menus: trap focus within the panel while open; return focus to trigger on close
 - Social buttons: include the provider name in the accessible label ("Sign in with Google")

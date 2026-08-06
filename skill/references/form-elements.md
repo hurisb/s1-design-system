@@ -267,42 +267,7 @@ Single-selection dropdown.
 
 ---
 
-### 8. Multi-select
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Multi-select` (StateGroupId:12206:577041)
-**Page:** ↳ Select
-
-Multi-selection dropdown with search and tag display.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Size | `sm`, `md`, `lg` | `sm` |
-| State | `Default`, `Active`, `Focused`, `Open default`, `Open active`, `Search empty state`, `Disabled` | `Default` |
-
-**Boolean properties:**
-- `Label` (default: on)
-- `Hint text` (default: on)
-- `Supporting text` (default: on)
-- `Scroll bar` (default: on)
-- `Required *` (default: on)
-- `Help icon` (default: on)
-
-**When to use:**
-- Selecting multiple items from a list (assign team members, select categories, tag content)
-
-**Tokens used** (from Figma)
-- Color: `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-placeholder` #717680, `fg-quaternary` #a4a7ae, `fg-white` #ffffff, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `bg-primary` #ffffff, `bg-brand-solid` #193978, `text-brand-secondary` #132b5a, …
-- Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
-- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
-- Type: `Text xs/Regular` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Regular` 16/24, `Text md/Medium` 16/24
-
----
-
-### 9. Slider
+### 8. Slider
 
 **Component:** `Slider` (StateGroupId:1086:534)
 **Page:** ↳ Sliders
@@ -331,7 +296,7 @@ Range slider for selecting numeric values.
 
 ---
 
-### 10. Progress Bar
+### 9. Progress Bar
 
 **Component:** `Progress bar` (StateGroupId:1085:57382)
 **Page:** ↳ Progress indicators
@@ -356,7 +321,7 @@ Horizontal bar showing completion progress.
 
 ---
 
-### 11. Progress Circle
+### 10. Progress Circle
 
 **Component:** `Progress circle` (StateGroupId:1084:2717)
 **Page:** ↳ Progress indicators
@@ -384,7 +349,7 @@ Circular/semi-circular progress indicator.
 
 ---
 
-### 12. Tooltip
+### 11. Tooltip
 
 **Component:** `Tooltip` (StateGroupId:1052:489)
 **Page:** ↳ Tooltips
@@ -412,7 +377,7 @@ Contextual information popup triggered on hover/focus.
 
 ---
 
-### 13. Help Icon
+### 12. Help Icon
 
 **Component:** `Help icon` (StateGroupId:1054:13)
 **Page:** ↳ Tooltips
@@ -442,7 +407,7 @@ Question-mark icon that reveals a tooltip on interaction.
 
 ---
 
-### 14. File Upload
+### 13. File Upload
 
 **Component:** `File upload` (StateGroupId:1175:101149)
 **Page:** ↳ File upload
@@ -470,7 +435,7 @@ Drag-and-drop file upload zone with queued file list.
 
 ---
 
-### 15. Text Editor
+### 14. Text Editor
 
 **Component:** `Text editor` (StateGroupId:9292:559325)
 **Page:** ↳ Text editors
@@ -505,7 +470,7 @@ Rich text editor with formatting toolbar.
 
 ---
 
-### 16. Button Group
+### 15. Button Group
 
 **Component:** `Button group` (StateGroupId:1046:10171)
 **Page:** ↳ Button groups
@@ -531,7 +496,7 @@ Segmented control / button bar for toggling between views or options.
 
 ---
 
-### 17. Date Picker Dropdown
+### 16. Date Picker Dropdown
 
 **Component:** `Date picker dropdown` (StateGroupId:1150:16803)
 **Page:** ↳ Date pickers
@@ -560,7 +525,7 @@ Date selection dropdown with calendar.
 
 ---
 
-### 18. Date Picker Modal
+### 17. Date Picker Modal
 
 **Component:** `Date picker modal` (StateGroupId:1547:269867)
 **Page:** ↳ Date pickers
@@ -585,66 +550,7 @@ Full-screen or centered modal date picker.
 
 ---
 
-### 19. Color Picker
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Color picker` (StateGroupId:12423:52680)
-**Page:** ↳ Color pickers
-
-Full-featured color selection component.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Type | `Solid color`, `Gradient stops`, `Image upload`, `Color swatch`, `Saved swatches sm`, `Saved swatches md`, `Brand swatches`, `Gray swatches`, `Minimal picker`, `Hue slider`, `Transparency slider`, `Palette picker` | `Solid color` |
-
-**Boolean properties:**
-- `Tabs` (default: on)
-
-**When to use:**
-- Theme customization, brand color selection, design tool color input
-- `Solid color` — full spectrum picker
-- `Palette picker` / `Brand swatches` / `Gray swatches` — constrained palette selection
-- `Gradient stops` — gradient editor
-
-**Tokens used** (from Figma)
-- Color: `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `fg-white` #ffffff, `fg-quaternary` #a4a7ae, `fg-brand-primary_alt` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `bg-primary` #ffffff, `bg-tertiary` #f5f5f5, `utility-brand-600` #193978, …
-- Radius: `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
-- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
-- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text lg/Semibold` 18/28
-
----
-
-### 20. Color Picker Dropdown
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Color picker dropdown` (StateGroupId:12424:15898)
-**Page:** ↳ Color pickers
-
-Compact color picker triggered from a swatch or input.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Type | `Swatch sm`, `Swatch button`, `Swatch button link`, `Hex input`, `Select`, `Swatch md` | `Swatch sm` |
-| Open | `False`, `True` | `False` |
-
-**Boolean properties:**
-- `Percentage input` (default: on)
-
-**Tokens used** (from Figma)
-- Color: `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `text-brand-secondary` #132b5a, `fg-white` #ffffff, `fg-quaternary` #a4a7ae, `fg-brand-primary_alt` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `bg-primary` #ffffff, …
-- Radius: `radius-sm` 6, `radius-md` 8, `radius-xl` 12, `radius-2xl` 16, `radius-full` 9999
-- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-2xl` 20
-- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
-
----
-
-### 21. Calendar
+### 18. Calendar
 
 **Component:** `Calendar` (StateGroupId:8022:24550)
 **Page:** ↳ Calendars
@@ -672,7 +578,7 @@ Full calendar view for event display and scheduling.
 
 ---
 
-### 22. Dropdown Menu
+### 19. Dropdown Menu
 
 **Component:** `Dropdown menu` (StateGroupId:3281:383083)
 **Page:** ↳ Dropdowns
@@ -701,34 +607,6 @@ General-purpose dropdown menu triggered by buttons, icons, or account elements.
 - Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-lg` 10, `radius-xl` 12, `radius-full` 9999
 - Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24
 - Type: `Text xs/Regular` 12/18, `Text xs/Medium` 12/18, `Text xs/Semibold` 12/18, `Text sm/Regular` 14/20, `Text sm/Semibold` 14/20
-
----
-
-### 23. Context Menu
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Context menu` (StateGroupId:11547:540792)
-**Page:** ↳ Dropdowns
-
-Right-click context menu.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Type | `Simple`, `Advanced` | `Simple` |
-| Open | `False`, `True` | `False` |
-
-**When to use:**
-- Right-click actions on table rows, canvas elements, file items
-- `Advanced` — includes keyboard shortcuts and sub-menus
-
-**Tokens used** (from Figma)
-- Color: `text-secondary` #414651, `text-secondary_hover` #252b37, `text-quaternary` #717680, `fg-quaternary` #a4a7ae, `fg-brand-primary` #193978, `fg-success-secondary` #17b26a, `border-secondary` #e9eaeb, `border-secondary_alt` #00000014, `bg-primary` #ffffff, `bg-primary_hover` #fafafa
-- Radius: `radius-sm` 6, `radius-md` 8
-- Spacing: `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8
-- Type: `Text xs/Medium` 12/18, `Text sm/Semibold` 14/20
 
 ---
 
@@ -761,7 +639,7 @@ Always use the same size across all form elements within a single form for visua
 - **< 5 options, single-select:** Radio group (all options visible)
 - **< 5 options, multi-select:** Checkbox group
 - **5-15 options, single-select:** Select dropdown
-- **5+ options, multi-select:** Multi-select with search
+- **5+ options, multi-select:** searchable Select, or a scrollable Checkbox group
 - **Binary on/off, immediate effect:** Toggle
 - **Binary yes/no, form submission:** Checkbox
 - **Numeric range:** Slider (with Input field for precise entry when needed)

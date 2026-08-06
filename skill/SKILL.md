@@ -37,8 +37,8 @@ relevant to the task at hand.
 | Tokens | `references/tokens.md` | Raw values from Figma: primitive color scales (hex), the extended utility palette, spacing, radius, numeric type scale, and layout/containers |
 | Color variables | `references/color-variables.md` | Semantic color tokens (text/border/foreground/background) with real light **and** dark hex, plus which token to use where |
 | Typography | `references/typography.md` | Font family, weights, display vs. text styles, real size/line-height values, usage rules |
-| Form elements | `references/form-elements.md` | Inputs, selects, checkboxes, buttons, date/color pickers, and more — full variant inventory |
-| Navigation | `references/navigation.md` | Nav bars, breadcrumbs, tabs, tree views, slideout menus |
+| Form elements | `references/form-elements.md` | Inputs, selects, checkboxes, toggles, sliders, buttons, date pickers, and more — full variant inventory |
+| Navigation | `references/navigation.md` | Nav bars, breadcrumbs, tabs, pagination, progress steps, slideout menus |
 | Data display | `references/data-display.md` | Tables, cards, badges, charts, alerts, empty states |
 | Logo | `references/logo.md` | The S1 logo — lockups, light/dark variants, colors, and usage do's/don'ts |
 

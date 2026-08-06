@@ -61,132 +61,7 @@ Data table with header row, sortable columns, and interactive cells.
 
 ---
 
-### 2. Filters Bar
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Filters bar` (StateGroupId:12232:376165)
-**Page:** ↳ Filters
-
-Horizontal filter controls above content areas.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Type | `Simple`, `Tabs and search`, `Tabs and date picker`, `Date filters`, `Dropdowns`, `Dropdowns and date picker`, `Advanced inactive filter`, `Advanced active filters` | `Simple` |
-| Breakpoint | `Desktop`, `Mobile` | `Desktop` |
-
-**When to use:**
-- `Simple` — basic search + filter button
-- `Tabs and search` — category tabs with search
-- `Dropdowns` — multiple dropdown filter controls
-- `Advanced *` — complex filter builder with active filter chips
-
-**Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-quaternary` #717680, `text-placeholder` #717680, `fg-quaternary` #a4a7ae, …
-- Radius: `radius-xs` 4, `radius-sm` 6, `radius-md` 8, `radius-full` 9999
-- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12
-- Type: `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
-
----
-
-### 3. Filters Dropdown Menu
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Filters dropdown menu` (StateGroupId:12232:366410)
-**Page:** ↳ Filters
-
-Individual filter dropdown trigger with active state.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| State | `Default`, `Hover`, `Focused`, `Open empty state`, `Open inactive filter`, `Open active filters`, `Active`, `Disabled` | `Default` |
-| Orientation | `Right aligned`, `Left aligned` | `Right aligned` |
-
-**Boolean properties:**
-- `Dropdown chevron` (default: on)
-- `Counter badge` (default: on) — shows count of active filters
-
-**Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-primary_hover` #fafafa, `bg-secondary` #fafafa, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-placeholder` #717680, `fg-quaternary` #a4a7ae, …
-- Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
-- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16
-- Type: `Text xs/Medium` 12/18, `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20
-
----
-
-### 4. Filters Slideout Menu
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Filters slideout menu` (StateGroupId:12232:375462)
-**Page:** ↳ Filters
-
-Side panel for complex multi-filter management.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| State | `Empty state`, `Inactive filter`, `Active filters` | `Empty state` |
-| Breakpoint | `Desktop`, `Mobile` | `Desktop` |
-
-**Tokens used** (from Figma)
-- Color: `bg-overlay` #0a0d12, `bg-primary` #ffffff, `bg-brand-solid` #193978, `border-primary` #d5d7da, `border-secondary` #e9eaeb, `border-brand` #1f4796, `text-primary` #181d27, `text-secondary` #414651, `text-tertiary` #535862, `text-placeholder` #717680, `fg-secondary` #414651, `fg-quaternary` #a4a7ae, …
-- Radius: `radius-sm` 6, `radius-md` 8, `radius-full` 9999
-- Spacing: `spacing-xxs` 2, `spacing-xs` 4, `spacing-sm` 6, `spacing-md` 8, `spacing-lg` 12, `spacing-xl` 16, `spacing-3xl` 24, `spacing-5xl` 40
-- Type: `Text sm/Regular` 14/20, `Text sm/Medium` 14/20, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28
-
----
-
-### 5. Avatar
-
-> Audit: node ID not found in master file — needs manual check
-
-**Component:** `Avatar` (StateGroupId:11008:45389)
-**Page:** ↳ Avatars
-
-User/entity avatar with status indicator.
-
-**Variant properties:**
-
-| Property | Options | Default |
-|---|---|---|
-| Size | `xs`, `sm`, `md`, `lg`, `xl`, `2xl` | `xs` |
-| Border | `False`, `True` | `False` |
-| Placeholder icon | `False`, `True` | `False` |
-| Placeholder text | `False`, `True` | `False` |
-
-**Boolean properties:**
-- `Status icon` (default: on) — online/offline/verified indicator
-
-**Sub-component: Status icon** — `Offline`, `Online`, `Avatar`, `Verified tick`, `Count`
-
-**Related components:**
-- **Avatar label group** — avatar + name + supporting text (sizes: `sm`, `md`, `lg`)
-- **Avatar group** — stacked avatar row with "more users" count and "add" button (sizes: `xs`, `sm`, `md`)
-- **Avatar profile photo** — large profile photo with verified badge and optional placeholder/text (sizes: `sm`, `md`, `lg`)
-
-**When to use:**
-- `xs`–`sm` — inline mentions, table cells, compact lists
-- `md` — cards, comments, activity feeds
-- `lg`–`2xl` — profile pages, user settings
-- `Placeholder icon` — unknown user with generic person icon
-- `Placeholder text` — user initials when no photo is available
-- `Border=True` — when avatar overlaps other content or in avatar groups
-
-**Tokens used** (from Figma)
-- Color: `bg-primary` #ffffff, `bg-tertiary` #f5f5f5, `border-secondary` #e9eaeb, `border-secondary_alt` #00000014, `text-quaternary` #717680, `fg-quaternary` #a4a7ae, `fg-success-secondary` #17b26a
-- Radius: `radius-full` 9999
-- Type: `Text xs/Semibold` 12/18, `Text sm/Semibold` 14/20, `Text md/Semibold` 16/24, `Text lg/Semibold` 18/28, `Text xl/Semibold` 20/30, `Display xs/Semibold` 24/32
-
----
-
-### 6. Badge
+### 2. Badge
 
 **Component:** `Badge` (StateGroupId:1046:3819)
 **Page:** ↳ Badges
@@ -222,7 +97,7 @@ Status indicator, label, or count badge.
 
 ---
 
-### 7. Content Divider
+### 3. Content Divider
 
 **Component:** `Content divider` (StateGroupId:1252:126874)
 **Page:** ↳ Content dividers
@@ -250,7 +125,7 @@ Visual separator between content sections.
 
 ---
 
-### 8. Modal
+### 4. Modal
 
 **Component:** `Modal` (StateGroupId:4057:415205)
 **Page:** ↳ Modals
@@ -286,7 +161,7 @@ Dialog overlay for focused tasks, confirmations, and forms.
 
 ---
 
-### 9. Empty State
+### 5. Empty State
 
 **Component:** `Empty state` (StateGroupId:1182:317)
 **Page:** ↳ Empty states
@@ -320,7 +195,7 @@ Placeholder content shown when a section has no data.
 
 ---
 
-### 10. Code Snippet
+### 6. Code Snippet
 
 **Component:** `Code snippet` (StateGroupId:1234:243)
 **Page:** ↳ Code snippets
@@ -352,7 +227,7 @@ Code block display with syntax highlighting area.
 
 ---
 
-### 11. Activity Feed
+### 7. Activity Feed
 
 **Component:** `Activity feed` (StateGroupId:1254:128631)
 **Page:** ↳ Activity feeds
@@ -390,7 +265,7 @@ Timeline of events or notifications.
 
 ---
 
-### 12. Alert
+### 8. Alert
 
 **Component:** `Alert` (StateGroupId:1130:81134)
 **Page:** ↳ Alerts & notifications
@@ -426,7 +301,7 @@ Inline alert banner for contextual messages.
 
 ---
 
-### 13. Notification
+### 9. Notification
 
 **Component:** `Notification` (StateGroupId:1135:618)
 **Page:** ↳ Alerts & notifications
@@ -460,7 +335,7 @@ Toast/snackbar notification popup.
 
 ---
 
-### 14. Card Header
+### 10. Card Header
 
 **Component:** `Card header` (StateGroupId:1211:169)
 **Page:** ↳ Card headers
@@ -493,7 +368,7 @@ Reusable header for card containers.
 
 ---
 
-### 15. Charts
+### 11. Charts
 
 **Page:** ↳ Charts
 
@@ -549,7 +424,7 @@ Reusable header for card containers.
 
 ---
 
-### 16. Command Bar
+### 12. Command Bar
 
 **Component:** `Command bar` (StateGroupId:3307:407570)
 **Page:** ↳ Command menus
@@ -577,7 +452,7 @@ Keyboard-driven command palette (Cmd+K / Ctrl+K).
 
 ---
 
-### 17. Inline CTA
+### 13. Inline CTA
 
 **Component:** `Inline CTA` (StateGroupId:1255:131915)
 **Page:** ↳ Inline CTAs
@@ -603,7 +478,7 @@ Inline call-to-action banner within content areas.
 
 ---
 
-### 18. Video Player 16:9
+### 14. Video Player 16:9
 
 **Component:** `Video player 16:9` (StateGroupId:9264:576771)
 **Page:** ↳ Video players
@@ -632,7 +507,7 @@ Standard 16:9 video player with controls.
 
 ---
 
-### 19. Message
+### 15. Message
 
 **Component:** `Message` (StateGroupId:1242:996)
 **Page:** ↳ Messaging
@@ -669,7 +544,7 @@ Chat message bubble with multiple content types.
 
 ---
 
-### 20. Loading Indicator
+### 16. Loading Indicator
 
 **Component:** `Loading indicator` (StateGroupId:1192:610)
 **Page:** ↳ Loading indicators
@@ -699,7 +574,7 @@ Spinner/loading animation.
 
 ---
 
-### 21. Metric Item
+### 17. Metric Item
 
 **Component:** `Metric item` (StateGroupId:1560:266217)
 **Page:** ↳ Metrics
@@ -736,7 +611,7 @@ KPI/metric display card.
 
 ---
 
-### 22. Page Header
+### 18. Page Header
 
 **Component:** `Page header` (StateGroupId:1239:122640)
 **Page:** ↳ Page headers
@@ -771,7 +646,7 @@ Top-level page header with title, actions, and optional banner.
 
 ---
 
-### 23. Section Header
+### 19. Section Header
 
 **Component:** `Section header` (StateGroupId:1214:38)
 **Page:** ↳ Section headers
@@ -808,7 +683,7 @@ Header for content sections within a page.
 
 ---
 
-### 24. Section Footer
+### 20. Section Footer
 
 **Component:** `Section footer` (StateGroupId:3275:372571)
 **Page:** ↳ Section footers
@@ -884,10 +759,7 @@ Footer for content sections and cards.
 - Return focus to the triggering element when the modal closes
 - Use `Destructive *` modal types only for irreversible actions
 
-### Avatars & Badges
-- Use `Placeholder text` (initials) as the primary fallback when no photo is available
-- Use `Placeholder icon` only when the user has no name to derive initials from
-- Limit avatar groups to 4-5 visible avatars plus a "+N more" indicator
+### Badges
 - Badge colors must be used consistently across the app (e.g. `Error` always means the same thing)
 
 ### Accessibility
@@ -902,7 +774,7 @@ Footer for content sections and cards.
 - Empty states: ensure the CTA button is focusable and clearly labeled
 
 ### Responsive Design
-- Use `Breakpoint=Mobile` variants for Tables, Modals, Alerts, Notifications, Inline CTAs, Page headers, Section headers, Section footers, Filters, Metric items, and Card headers
+- Use `Breakpoint=Mobile` variants for Tables, Modals, Alerts, Notifications, Inline CTAs, Page headers, Section headers, Section footers, Metric items, and Card headers
 - Tables on mobile should either horizontally scroll or transform to a card/list layout
 - Modals on mobile should be full-screen or bottom-sheet style
 - Metric items should stack vertically on mobile
